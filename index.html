@@ -164,18 +164,41 @@ body {
 .result-strip {
     display: none;
     margin-bottom: 15px;
-    padding: 12px 14px;
+  padding: 16px;
     background: var(--bg-panel);
     border: 1px solid var(--border);
     border-radius: 12px;
-    text-align: center;
+  min-height: 142px;
+  text-align: left;
     font-weight: 700;
     box-shadow: 0 8px 20px rgba(35, 71, 137, 0.06);
 }
 
-.result-strip span {
-    margin: 0 10px;
-    color: var(--text-main);
+.result-strip-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.result-strip-card {
+  background: #f4f8ff;
+  border: 1px solid #c7d7f0;
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.result-strip-label {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  letter-spacing: 0.2px;
+}
+
+.result-strip-value {
+  color: var(--text-main);
+  font-size: 1.04rem;
+  font-weight: 800;
 }
 
 .question-card {
@@ -241,18 +264,36 @@ body {
 }
 
 .option.selected {
-    border-color: var(--accent);
-    background: #edf4ff;
+  border: 2px solid var(--accent);
+  background: #e4efff;
+  box-shadow: 0 0 0 1px rgba(47, 103, 216, 0.2);
 }
 
 .option.correct {
-    background: var(--ok-bg);
-    border-color: var(--ok-border);
+  background: #ddf5e8;
+  border: 2px solid #7ecaa1;
+  box-shadow: 0 0 0 1px rgba(126, 202, 161, 0.24);
 }
 
 .option.incorrect {
-    background: var(--bad-bg);
-    border-color: var(--bad-border);
+  background: #ffe7e6;
+  border: 2px solid #e39f9c;
+  box-shadow: 0 0 0 1px rgba(227, 159, 156, 0.24);
+}
+
+.option.selected .option-label {
+  background: #cfdfff;
+  color: #1e448d;
+}
+
+.option.correct .option-label {
+  background: #ccefdc;
+  color: #215e3c;
+}
+
+.option.incorrect .option-label {
+  background: #ffd8d6;
+  color: #8f2f2f;
 }
 
 .option-label {
@@ -502,6 +543,9 @@ body {
     font-size: 16px;
   }
   .q-nav-go { min-width: 48px; }
+  .result-strip-grid { gap: 10px; }
+  .result-strip-card { padding: 10px; }
+  .result-strip-value { font-size: 0.94rem; }
   .install-help-box {
     padding: 16px;
     border-radius: 12px;
@@ -7646,11 +7690,24 @@ function submitTest(){
         // REVIEW MODE STRIP
         const strip = document.getElementById("resultStrip");
         strip.innerHTML = `
-          <span>Total Score: ${totalPercent}% (${correct}/${questions.length})</span>
-          <span>Attempted Score: ${answeredPercent}% (${correct}/${answered})</span>
-            <span>Correct: ${correct}</span>
-          <span>Incorrect: ${incorrect}</span>
-            <span>Unanswered: ${unanswered}</span>
+          <div class="result-strip-grid">
+            <div class="result-strip-card">
+              <div class="result-strip-label">Total Score</div>
+              <div class="result-strip-value">${totalPercent}% (${correct}/${questions.length})</div>
+            </div>
+            <div class="result-strip-card">
+              <div class="result-strip-label">Attempted Score</div>
+              <div class="result-strip-value">${answeredPercent}% (${correct}/${answered})</div>
+            </div>
+            <div class="result-strip-card">
+              <div class="result-strip-label">Correct</div>
+              <div class="result-strip-value">${correct}</div>
+            </div>
+            <div class="result-strip-card">
+              <div class="result-strip-label">Incorrect</div>
+              <div class="result-strip-value">${incorrect}</div>
+            </div>
+          </div>
         `;
         strip.style.display = "block";
         document.getElementById("retakeBtn").style.display = "inline-block";
