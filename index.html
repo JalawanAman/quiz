@@ -7383,9 +7383,27 @@ function shuffleArray(arr){
     return out;
 }
 
+  function shuffleQuestionOptions(question){
+    const optionPairs = question.options.map((text, index) => ({ text, index }));
+    const shuffledPairs = shuffleArray(optionPairs);
+    return {
+      question: question.question,
+      options: shuffledPairs.map(pair => pair.text),
+      correct: shuffledPairs.findIndex(pair => pair.index === question.correct),
+      why: question.why
+    };
+  }
+
+  function prepareQuestions(){
+    const questionOrder = shuffleEnabled
+      ? shuffleArray(cloneQuestionSet(originalQuestions))
+      : cloneQuestionSet(originalQuestions);
+    return questionOrder.map(shuffleQuestionOptions);
+  }
+
 let shuffleEnabled = false;
 const originalQuestions = cloneQuestionSet(rawQuestions);
-let questions = cloneQuestionSet(originalQuestions);
+let questions = prepareQuestions();
 
 let currentQuestion = 0;
 let userAnswers = Array(questions.length).fill(null);
@@ -7399,7 +7417,7 @@ function updateShuffleToggleUI(){
 }
 
 function resetQuizState(){
-    questions = shuffleEnabled ? shuffleArray(originalQuestions) : cloneQuestionSet(originalQuestions);
+  questions = prepareQuestions();
     currentQuestion = 0;
     userAnswers = Array(questions.length).fill(null);
     testSubmitted = false;
