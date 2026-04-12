@@ -7619,18 +7619,22 @@ function submitTest(){
 
     let correct = 0;
     userAnswers.forEach((a,i)=>{ if(a === questions[i].correct) correct++; });
+    const answered = userAnswers.filter(a=>a!==null).length;
     const unanswered = userAnswers.filter(a=>a===null).length;
-    const percent = ((correct/questions.length)*100).toFixed(1);
+    const incorrect = answered - correct;
+    const totalPercent = ((correct / questions.length) * 100).toFixed(1);
+    const answeredPercent = answered > 0 ? ((correct / answered) * 100).toFixed(1) : "0.0";
 
     // SHOW OLD RESULT MODAL
     const modal = document.getElementById("results");
     const box = document.getElementById("resultsBox");
     box.innerHTML = `
         <h2>Test Results</h2>
-        <div class="score-display">${percent}%</div>
+      <div class="score-display">${totalPercent}%</div>
+      <p style="margin-top:-6px;color:var(--text-muted);font-weight:600;">Attempted Score: ${answeredPercent}% (${correct}/${answered})</p>
         <div class="stats">
             <div class="stat-card"><div class="stat-value">${correct}</div><div class="stat-label">Correct</div></div>
-            <div class="stat-card"><div class="stat-value">${questions.length-correct}</div><div class="stat-label">Incorrect</div></div>
+        <div class="stat-card"><div class="stat-value">${incorrect}</div><div class="stat-label">Incorrect</div></div>
             <div class="stat-card"><div class="stat-value">${unanswered}</div><div class="stat-label">Unanswered</div></div>
             <div class="stat-card"><div class="stat-value">${questions.length}</div><div class="stat-label">Total</div></div>
         </div>`;
@@ -7642,9 +7646,10 @@ function submitTest(){
         // REVIEW MODE STRIP
         const strip = document.getElementById("resultStrip");
         strip.innerHTML = `
-            <span>Score: ${percent}%</span>
+          <span>Total Score: ${totalPercent}% (${correct}/${questions.length})</span>
+          <span>Attempted Score: ${answeredPercent}% (${correct}/${answered})</span>
             <span>Correct: ${correct}</span>
-            <span>Incorrect: ${questions.length-correct}</span>
+          <span>Incorrect: ${incorrect}</span>
             <span>Unanswered: ${unanswered}</span>
         `;
         strip.style.display = "block";
