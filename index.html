@@ -608,1885 +608,1104 @@ body {
 /* ===== DATA (REPLACE THIS ONLY) ===== */
 const rawQuestions = [
   {
-    "question": "Which of the following best describes software engineering according to the given definition?",
+    "question": "In a file-based system, two departments maintain separate files for customer data. What is a major drawback of this approach?",
     "options": [
-      "A creative art focused on writing code quickly without formal processes",
-      "An application of engineering principles to develop software systematically and reliably",
-      "A purely theoretical study of algorithms without concern for software operation",
-      "A process that ignores maintenance and focuses only on initial software development"
-    ],
-    "correct": 1,
-    "why": "Software engineering applies systematic, disciplined, and quantifiable engineering principles to software development, operation, and maintenance."
-  },
-  {
-    "question": "If a team is developing software by following a structured, measurable approach to ensure scalability and maintainability, which aspect of software engineering are they primarily demonstrating?",
-    "options": [
-      "Ad hoc programming",
-      "Systematic and disciplined approach",
-      "Ignoring operation and maintenance phases",
-      "Focusing only on software design without quantification"
-    ],
-    "correct": 1,
-    "why": "A systematic and disciplined approach with quantifiable methods ensures scalability and maintainability, key aspects of software engineering."
-  },
-  {
-    "question": "Match the following activities with software engineering principles: \n1) Applying engineering principles\n2) Ensuring software reliability\n3) Maintaining software post-deployment\n4) Using a quantifiable approach\nWhich of these are core to software engineering?",
-    "options": [
-      "Only 1 and 2",
-      "1, 2, and 3",
-      "1, 2, 3, and 4",
-      "Only 3 and 4"
-    ],
-    "correct": 2,
-    "why": "Software engineering involves applying engineering principles, ensuring reliability, maintaining software, and using quantifiable approaches."
-  },
-  {
-    "question": "Which of the following best describes the core principle of software engineering?",
-    "options": [
-      "Using a random approach to software development to encourage creativity",
-      "Applying engineering principles systematically to ensure software quality",
-      "Focusing solely on the aesthetic design of software interfaces",
-      "Developing software without considering maintenance or scalability"
-    ],
-    "correct": 1,
-    "why": "Software engineering applies systematic and disciplined engineering principles to ensure software is efficient, reliable, scalable, and maintainable."
-  },
-  {
-    "question": "If a team emphasizes quantifiable metrics and disciplined processes during software development, which aspect of software engineering are they primarily implementing?",
-    "options": [
-      "Ad hoc programming",
-      "Systematic engineering approach",
-      "Creative brainstorming sessions",
-      "User interface design"
-    ],
-    "correct": 1,
-    "why": "A systematic, disciplined, and quantifiable approach is fundamental to software engineering, distinguishing it from informal or creative-only methods."
-  },
-  {
-    "question": "Consider a scenario where a software project focuses on ensuring the product is scalable and maintainable over time. Which software engineering principle does this scenario best illustrate?",
-    "options": [
-      "Ignoring future software operation needs",
-      "Applying engineering principles to software development",
-      "Prioritizing quick delivery over quality",
-      "Using unstructured coding techniques"
-    ],
-    "correct": 1,
-    "why": "Applying engineering principles ensures the software is scalable and maintainable, which are key goals of software engineering."
-  },
-  {
-    "question": "If a software project emphasizes systematic testing, process improvement, and maintaining high standards to ensure reliability and efficiency, which software engineering layer is primarily being addressed?",
-    "options": [
-      "A Quality Focus (Foundation Layer)",
-      "Requirements Engineering Layer",
-      "Design and Architecture Layer",
-      "Implementation Layer"
+      "Data redundancy causing inconsistent updates",
+      "Centralized control over data access",
+      "Automatic synchronization of data between files",
+      "Uniform file formats across departments"
     ],
     "correct": 0,
-    "why": "The Quality Focus layer ensures reliability, maintainability, and efficiency through QA, testing, and process improvements, forming the foundation for all other layers."
+    "why": "File-based systems often lead to data duplication because each department manages its own files, causing redundancy and potential inconsistency. Centralized control and synchronization are features of database systems, not file-based systems. Different departments typically use incompatible file formats, not uniform ones."
   },
   {
-    "question": "Given that software engineering applies engineering principles systematically and quantitatively to software development, which of the following best describes the discipline's main goal?",
+    "question": "Which type of data best describes a collection of customer emails stored as plain text without a fixed format?",
     "options": [
-      "To create software that is efficient, reliable, scalable, and maintainable",
-      "To write code as quickly as possible without formal processes",
-      "To focus solely on the aesthetic design of software interfaces",
-      "To avoid documentation and rely on informal communication"
+      "Unstructured data",
+      "Structured data",
+      "Semi-structured data",
+      "Metadata"
     ],
     "correct": 0,
-    "why": "Software engineering aims to produce software products that are efficient, reliable, scalable, and maintainable by applying disciplined engineering principles."
+    "why": "Unstructured data lacks a predefined format, such as plain text emails. Structured data has a strict schema like tables, and semi-structured data has some organization like XML. Metadata describes data properties, not the data itself."
   },
   {
-    "question": "A team is focusing on improving software processes and conducting rigorous testing to support other development activities. How does this focus relate to the overall software engineering layers?",
+    "question": "Metadata in a database system primarily helps users to:",
     "options": [
-      "It represents the foundation layer that supports all other layers",
-      "It is part of the user interface design layer",
-      "It belongs to the deployment and maintenance layer",
-      "It is unrelated to software engineering layers"
+      "Understand the meaning and structure of stored data",
+      "Store large volumes of raw data efficiently",
+      "Automatically generate reports from data",
+      "Encrypt sensitive data for security"
     ],
     "correct": 0,
-    "why": "Process improvement and rigorous testing are core activities of the Quality Focus foundation layer, which underpins and supports all other software engineering layers."
+    "why": "Metadata provides information about data, such as its meaning and structure, enabling users and designers to interpret it correctly. It does not handle data storage efficiency, report generation, or encryption directly."
   },
   {
-    "question": "In the context of Software Engineering Layers, which activity primarily ensures that the software remains reliable and maintainable?",
+    "question": "A contracts department uses a file-based system where each program accesses its own data files. What happens if a new report requires data from both sales and contracts files?",
     "options": [
-      "Quality assurance and testing",
-      "Requirement gathering",
-      "User interface design",
-      "Deployment and maintenance"
+      "A new program must be written to combine data manually",
+      "The existing programs automatically share data",
+      "Data is centrally accessible without modification",
+      "The system merges files without user intervention"
     ],
     "correct": 0,
-    "why": "Quality assurance and testing directly contribute to maintaining software reliability and maintainability as part of the quality focus layer."
+    "why": "In file-based systems, data is isolated per program; combining data from multiple files requires writing new programs. Automatic sharing or central access is a feature of database systems, not file-based ones."
   },
   {
-    "question": "If a software project emphasizes continuous process improvement and rigorous testing to enhance efficiency, which Software Engineering Layer is being prioritized?",
+    "question": "Given the table Properties(property_id, owner_name, price), what is the effect of executing DELETE FROM Properties without a WHERE clause?",
     "options": [
-      "Foundation Layer focusing on quality",
-      "Design Layer focusing on architecture",
-      "Implementation Layer focusing on coding",
-      "Deployment Layer focusing on delivery"
+      "All rows in Properties are removed, but table structure remains",
+      "Table Properties is dropped entirely from the database",
+      "Only rows with NULL values are deleted",
+      "No rows are deleted without WHERE clause"
     ],
     "correct": 0,
-    "why": "The Foundation Layer centers on quality through QA, testing, and process improvement to ensure software efficiency."
+    "why": "DELETE without WHERE removes all rows but keeps the table structure intact. DROP removes the table itself. Rows with NULL are not selectively deleted without a condition. DELETE always affects rows unless restricted."
   },
   {
-    "question": "Consider a scenario where a software team neglects quality assurance and process improvement. What is the likely impact on the software product according to the Software Engineering Layers concept?",
+    "question": "Consider two tables: Clients(client_id, name) and Leases(lease_id, client_id, property_id). Which SQL query returns all clients including those without leases?",
     "options": [
-      "Reduced reliability and maintainability",
-      "Improved user experience",
-      "Faster deployment",
-      "Enhanced feature set"
+      "SELECT * FROM Clients LEFT JOIN Leases ON Clients.client_id = Leases.client_id",
+      "SELECT * FROM Clients INNER JOIN Leases ON Clients.client_id = Leases.client_id",
+      "SELECT * FROM Leases LEFT JOIN Clients ON Leases.client_id = Clients.client_id",
+      "SELECT * FROM Clients RIGHT JOIN Leases ON Clients.client_id = Leases.client_id"
     ],
     "correct": 0,
-    "why": "Neglecting quality assurance and process improvement undermines the foundation layer, leading to lower reliability and maintainability."
+    "why": "LEFT JOIN from Clients to Leases returns all clients, even those without leases (NULLs in Leases). INNER JOIN excludes clients without leases. RIGHT JOIN would return all leases, not clients. The third option reverses tables and would not return all clients."
   },
   {
-    "question": "Which software engineering layer primarily focuses on defining the Software Development Life Cycle and methodologies like Agile and Waterfall?",
+    "question": "In a property rental database, which key is best suited to uniquely identify each lease record?",
     "options": [
-      "Process Layer",
-      "Tools Layer",
-      "Quality Layer",
-      "Product Layer"
+      "A surrogate key like lease_id with AUTO_INCREMENT",
+      "Owner's name combined with property address",
+      "Client's phone number",
+      "Property type"
     ],
     "correct": 0,
-    "why": "The Process Layer provides the structured framework and defines SDLC and methodologies."
+    "why": "A surrogate key such as lease_id with AUTO_INCREMENT uniquely identifies each lease record reliably. Owner's name and address may not be unique or stable. Phone number and property type are not unique identifiers."
   },
   {
-    "question": "If a project manager is ensuring that software development is progressing on schedule and within budget, which software engineering layer are they primarily engaging with?",
+    "question": "Which is a key advantage of a 3-tier database architecture over a 2-tier architecture?",
     "options": [
-      "Process Layer",
-      "Tools Layer",
-      "People Layer",
-      "Product Layer"
+      "Improved scalability by separating client, application, and database layers",
+      "Simpler design with fewer components",
+      "Direct client access to database files",
+      "No need for application servers"
     ],
     "correct": 0,
-    "why": "Planning, execution, and monitoring fall under the Process Layer responsibilities."
+    "why": "3-tier architecture separates client, application, and database layers, improving scalability and maintainability. 2-tier is simpler but less scalable. Direct client access and no application servers are characteristics of 2-tier, not 3-tier."
   },
   {
-    "question": "A development team decides to use the Spiral model to manage risk and iterative development. This decision is an example of applying which software engineering concept?",
+    "question": "Given the SQL: SELECT client_id FROM Clients WHERE client_id NOT IN (SELECT client_id FROM Leases); What does this query return?",
     "options": [
-      "Process Layer",
-      "Architecture Layer",
-      "Testing Layer",
-      "Deployment Layer"
+      "Clients who have no lease records",
+      "Clients who have at least one lease",
+      "All client_ids from both tables",
+      "An error due to subquery"
     ],
     "correct": 0,
-    "why": "Choosing SDLC models like Spiral is part of the Process Layer."
+    "why": "The query returns client_ids from Clients that do not appear in Leases, i.e., clients without leases. It does not return clients with leases or all clients. The subquery is valid and does not cause an error."
   },
   {
-    "question": "Match the following activities to the correct software engineering layer:\n1) Defining project timelines\n2) Selecting coding tools\n3) Conducting unit tests\n4) Designing user interface\nWhich option correctly maps all activities?",
+    "question": "Which statement best distinguishes data from information?",
     "options": [
-      "1-Process Layer, 2-Tools Layer, 3-Quality Layer, 4-Product Layer",
-      "1-Tools Layer, 2-Process Layer, 3-Product Layer, 4-Quality Layer",
-      "1-Quality Layer, 2-Product Layer, 3-Process Layer, 4-Tools Layer",
-      "1-Product Layer, 2-Quality Layer, 3-Tools Layer, 4-Process Layer"
+      "Data are raw facts; information is processed and meaningful",
+      "Data is always numeric; information is textual",
+      "Information is stored in files; data is stored in databases",
+      "Data and information are interchangeable terms"
     ],
     "correct": 0,
-    "why": "Planning is Process Layer; tool selection is Tools Layer; testing is Quality Layer; UI design is Product Layer."
+    "why": "Data consists of raw, unprocessed facts, while information is data that has been processed to provide meaning. Data is not limited to numeric types, and both data and information can be stored in databases or files. They are not interchangeable."
   },
   {
-    "question": "Which layer in Software Engineering primarily focuses on techniques like Object-Oriented Programming and Data Modeling to improve modularity and scalability?",
+    "question": "Which DBMS component is responsible for enforcing access permissions and preventing unauthorized data retrieval?",
     "options": [
-      "Methods Layer",
-      "Process Layer",
-      "Tools Layer",
-      "Management Layer"
+      "Security and Integrity Module",
+      "Data Definition Language Processor",
+      "Query Optimizer",
+      "Recovery Manager"
     ],
     "correct": 0,
-    "why": "The Methods Layer defines techniques such as OOP and Data Modeling that enhance modularity and scalability."
+    "why": "The Security and Integrity Module controls access rights to data, ensuring only authorized users can retrieve or modify data. The Data Definition Language Processor only defines schema structures, not access control. Query Optimizer improves query execution but does not handle security. Recovery Manager deals with restoring data after failures."
   },
   {
-    "question": "If a software team is deciding on procedures for system design and coding to ensure efficient maintenance, which Software Engineering layer are they primarily working within?",
+    "question": "Consider the SQL statement: DELETE FROM Orders; What is the effect of executing this without a WHERE clause?",
     "options": [
-      "Methods Layer",
-      "Process Layer",
-      "Tools Layer",
-      "Quality Assurance Layer"
+      "All rows in Orders are removed, but table structure remains",
+      "Table Orders is dropped from the database",
+      "Only rows matching default conditions are deleted",
+      "Table Orders is truncated, resetting identity counters"
     ],
     "correct": 0,
-    "why": "System design and coding procedures are part of the Methods Layer, which focuses on software analysis, design, and maintenance techniques."
+    "why": "DELETE without WHERE removes all rows but keeps the table and its structure intact. DROP removes the entire table, which is not the case here. There is no default condition filtering rows in DELETE. TRUNCATE is a different command that resets storage and identity counters."
   },
   {
-    "question": "A developer is applying Object-Oriented Programming techniques to improve software modularity. This activity is best classified under which Software Engineering layer?",
+    "question": "In a hospital database, a Patient entity has a multivalued attribute 'Allergies'. Which design choice best represents this in a relational schema?",
     "options": [
-      "Methods Layer",
-      "Process Layer",
-      "Tools Layer",
-      "Deployment Layer"
+      "Create a separate Allergies table linked by PatientID",
+      "Store all allergies as a comma-separated string in Patient table",
+      "Add multiple Allergy1, Allergy2 columns in Patient table",
+      "Use a derived attribute to compute allergies from visits"
     ],
     "correct": 0,
-    "why": "OOP is a technique defined in the Methods Layer, which ensures modularity and efficiency."
+    "why": "Multivalued attributes should be represented by a separate table to maintain normalization and allow multiple allergy entries per patient. Storing comma-separated values or multiple columns violates normalization. Derived attributes are computed, not stored multivalued data."
   },
   {
-    "question": "Which layer of software engineering includes tools like Visual Studio, Selenium, and Git, and primarily aims to enhance productivity and collaboration?",
+    "question": "Which role in the DBMS environment is primarily responsible for defining data standards and policies across an organization?",
     "options": [
-      "Tools Layer",
-      "Process Layer",
-      "Methods Layer",
-      "Management Layer"
+      "Data Administrator",
+      "Database Administrator",
+      "Application Developer",
+      "End-User"
     ],
     "correct": 0,
-    "why": "The Tools Layer contains software tools such as IDEs, testing tools, and version control systems that support productivity and collaboration."
+    "why": "Data Administrators focus on data policies, standards, and planning. Database Administrators handle physical implementation and security. Application Developers build programs interacting with the database. End-Users consume data but do not define standards."
   },
   {
-    "question": "If a development team uses Eclipse for coding, JUnit for testing, and Git for version control, to which software engineering layer do these tools belong?",
+    "question": "Given the SQL query: SELECT e.Name, d.DeptName FROM Employee e LEFT JOIN Department d ON e.DeptID = d.DeptID WHERE d.DeptName IS NOT NULL; What is the effective join type performed?",
     "options": [
-      "Tools Layer",
-      "Methods Layer",
-      "Process Layer",
-      "Quality Assurance Layer"
+      "Equivalent to INNER JOIN",
+      "Retains all employees regardless of department",
+      "Returns all departments even without employees",
+      "Produces a Cartesian product of Employee and Department"
     ],
     "correct": 0,
-    "why": "IDEs like Eclipse, testing tools like JUnit, and version control systems like Git are all part of the Tools Layer."
+    "why": "Filtering LEFT JOIN results with WHERE d.DeptName IS NOT NULL removes rows where no matching department exists, effectively converting it to an INNER JOIN. The query no longer retains employees without departments. It does not return all departments or produce a Cartesian product."
   },
   {
-    "question": "A software team wants to automate testing and manage code versions efficiently. Which layer should they focus on to select appropriate software tools?",
+    "question": "Which of the following best illustrates physical data independence in a DBMS?",
     "options": [
-      "Tools Layer",
-      "Process Layer",
-      "Methods Layer",
-      "Requirements Layer"
+      "Changing file storage method without affecting application queries",
+      "Adding a new attribute to a table without changing schema",
+      "Modifying a query to include a new join condition",
+      "Changing user views without altering the base tables"
     ],
     "correct": 0,
-    "why": "Automation and version management are supported by tools in the Tools Layer, which includes testing and version control software."
+    "why": "Physical data independence means changes in physical storage (e.g., file organization) do not impact application-level queries. Adding attributes affects logical schema, modifying queries changes application logic, and changing user views relates to logical independence."
   },
   {
-    "question": "In the context of software engineering layers, which of the following best describes the primary role of the Tools Layer?",
+    "question": "In a database, which key uniquely identifies a record but is composed of more than one attribute?",
     "options": [
-      "It defines the overall software development process and methodologies.",
-      "It provides software tools that enhance productivity, automation, and collaboration.",
-      "It manages the business requirements and stakeholder communications.",
-      "It outlines the software design and architecture."
-    ],
-    "correct": 1,
-    "why": "The Tools Layer specifically includes software tools like IDEs, testing tools, and version control that support process and methods by enhancing productivity and collaboration."
-  },
-  {
-    "question": "During the software design activity for an e-commerce website, which of the following actions best exemplifies this phase?",
-    "options": [
-      "Writing code to implement payment processing features.",
-      "Communicating with stakeholders to gather and clarify requirements.",
-      "Setting up automated testing frameworks like Selenium or JUnit.",
-      "Committing code changes to a version control system like Git."
-    ],
-    "correct": 1,
-    "why": "Software design involves defining the overall structure and requires communication with stakeholders to gather requirements, which guides the design decisions."
-  },
-  {
-    "question": "If a software team is using Visual Studio for coding, Selenium for testing, and Git for version control, which software engineering layer are they primarily utilizing?",
-    "options": [
-      "Process Layer",
-      "Methods Layer",
-      "Tools Layer",
-      "Management Layer"
-    ],
-    "correct": 2,
-    "why": "Visual Studio, Selenium, and Git are examples of software tools that belong to the Tools Layer, which supports the process and methods."
-  },
-  {
-    "question": "In the software design activity for an e-commerce website, which of the following best describes the primary goal?",
-    "options": [
-      "Gather detailed user feedback after deployment",
-      "Define the overall structure of the website",
-      "Write and test individual code modules",
-      "Perform system maintenance and updates"
-    ],
-    "correct": 1,
-    "why": "The main goal of software design is to define the overall structure of the system."
-  },
-  {
-    "question": "During the software design activity for an e-commerce platform, communication with stakeholders is essential. Which stakeholders are typically involved in this phase?",
-    "options": [
-      "Only the business team",
-      "Developers and customers only",
-      "Business team, developers, and customers",
-      "Quality assurance team exclusively"
-    ],
-    "correct": 2,
-    "why": "Effective design requires input from business team, developers, and customers to gather comprehensive requirements."
-  },
-  {
-    "question": "If a software team is defining the overall structure of an e-commerce website and actively communicating with business, developers, and customers to gather requirements, which software development activity are they primarily engaged in?",
-    "options": [
-      "Software Testing",
-      "Software Design",
-      "Requirements Analysis",
-      "Deployment"
-    ],
-    "correct": 1,
-    "why": "Defining structure and stakeholder communication to gather requirements is characteristic of the software design activity."
-  },
-  {
-    "question": "In the context of designing an e-commerce system, which task within Architectural Design primarily focuses on deciding the programming languages and frameworks to be used?",
-    "options": [
-      "Define Microservices",
-      "Select Technology Stack",
-      "Design Database Schema",
-      "Create System Architecture Diagram"
-    ],
-    "correct": 1,
-    "why": "Selecting the technology stack involves choosing programming languages, frameworks, and databases, which directly relates to the technology decisions."
-  },
-  {
-    "question": "If the goal is to illustrate how the front end, back end, and database components communicate in an e-commerce system, which major work product should be produced?",
-    "options": [
-      "Entity-relationship diagrams",
-      "List of independent microservices",
-      "System architecture diagram",
-      "Technology stack documentation"
-    ],
-    "correct": 2,
-    "why": "A system architecture diagram visually represents the interaction between different system components like front end, back end, and database."
-  },
-  {
-    "question": "During Architectural Design, which task results in defining independent services such as user service and payment service and their interactions?",
-    "options": [
-      "Design Database Schema",
-      "Define Microservices",
-      "Select Technology Stack",
-      "Develop User Interface"
-    ],
-    "correct": 1,
-    "why": "Defining microservices involves identifying independent services and specifying how they communicate within the system."
-  },
-  {
-    "question": "Match the following tasks to their expected outcomes in the Architectural Design of an e-commerce system:\n1) Define Microservices\n2) Select Technology Stack\n3) Design Database Schema\nOptions:\nA) ER diagrams showing product and user data\nB) List of independent services and their interactions\nC) Decision on programming languages and frameworks",
-    "options": [
-      "1-B, 2-C, 3-A",
-      "1-A, 2-B, 3-C",
-      "1-C, 2-A, 3-B",
-      "1-B, 2-A, 3-C"
+      "Composite Key",
+      "Alternate Key",
+      "Foreign Key",
+      "Candidate Key"
     ],
     "correct": 0,
-    "why": "Defining microservices yields a list of services (B), selecting technology stack decides languages/frameworks (C), and designing database schema produces ER diagrams (A)."
+    "why": "A Composite Key is a unique identifier made up of multiple attributes combined. Alternate Keys are candidate keys not chosen as primary. Foreign Keys reference primary keys in other tables. Candidate Keys can be single or composite but the question specifies composition."
   },
   {
-    "question": "Which of the following best describes umbrella activities in software engineering?",
+    "question": "An application program issues: SELECT * FROM Inventory WHERE Quantity > 0; Which DBMS component processes this request to retrieve data?",
     "options": [
-      "Phase-specific tasks performed only during the design phase",
-      "Supporting activities applied throughout the entire software development lifecycle",
-      "Activities exclusive to the testing phase to ensure quality",
-      "Development tasks unique to the Agile model"
-    ],
-    "correct": 1,
-    "why": "Umbrella activities are supporting tasks that span multiple phases of the SDLC, not limited to any single phase or model."
-  },
-  {
-    "question": "If a software team is continuously performing configuration management, risk management, and quality assurance throughout all phases of development, these activities are best classified as:",
-    "options": [
-      "Core development activities",
-      "Umbrella activities",
-      "Phase-gate reviews",
-      "Project closure tasks"
-    ],
-    "correct": 1,
-    "why": "These supporting activities that occur across all phases are umbrella activities."
-  },
-  {
-    "question": "Consider a scenario where a project uses the Waterfall model but incorporates continuous documentation updates, risk assessments, and quality checks throughout the lifecycle. How would you classify these ongoing tasks?",
-    "options": [
-      "Waterfall-specific phase activities",
-      "Umbrella activities that support the Waterfall process",
-      "Agile sprint ceremonies",
-      "Post-development maintenance tasks"
-    ],
-    "correct": 1,
-    "why": "Umbrella activities are independent of the development model and support the process throughout all phases, including Waterfall."
-  },
-  {
-    "question": "Which of the following best describes umbrella activities in software engineering?",
-    "options": [
-      "Activities that occur only during the testing phase",
-      "Supporting activities applied throughout the entire SDLC",
-      "Tasks specific to the design phase",
-      "Steps exclusive to the deployment stage"
-    ],
-    "correct": 1,
-    "why": "Umbrella activities span multiple stages of development and support the entire software lifecycle."
-  },
-  {
-    "question": "If a software team is continuously performing quality assurance, configuration management, and documentation throughout development, these activities are examples of:",
-    "options": [
-      "Phase-specific tasks",
-      "Umbrella activities",
-      "Post-deployment maintenance",
-      "Initial requirement gathering"
-    ],
-    "correct": 1,
-    "why": "These supporting tasks are umbrella activities applied across all phases to ensure quality and maintainability."
-  },
-  {
-    "question": "In a scenario where a project uses the Spiral model but still emphasizes risk management, configuration control, and quality assurance throughout, these ongoing tasks are classified as:",
-    "options": [
-      "Core spiral phases",
-      "Umbrella activities",
-      "Waterfall phases",
-      "Project milestones"
-    ],
-    "correct": 1,
-    "why": "Umbrella activities are supporting tasks that apply regardless of the development model, including Spiral."
-  },
-  {
-    "question": "Which statement correctly maps umbrella activities to software development models?",
-    "options": [
-      "Umbrella activities are only relevant in Agile development.",
-      "Umbrella activities replace the main phases in Waterfall.",
-      "Umbrella activities support all development models like Agile, Waterfall, and Spiral.",
-      "Umbrella activities occur after the software is deployed."
-    ],
-    "correct": 2,
-    "why": "Umbrella activities are supporting processes applied throughout the SDLC regardless of the chosen development model."
-  },
-  {
-    "question": "Which umbrella activity is primarily responsible for monitoring a software project's progress and ensuring it stays within budget and schedule?",
-    "options": [
-      "Risk Management",
-      "Software Project Tracking and Control",
-      "Software Quality Assurance",
-      "Requirements Analysis"
-    ],
-    "correct": 1,
-    "why": "Software Project Tracking and Control focuses on monitoring progress, budget, and schedule adherence."
-  },
-  {
-    "question": "If a software team identifies a potential delay due to resource shortages and implements strategies to minimize its impact, which umbrella activity are they performing?",
-    "options": [
-      "Software Quality Assurance",
-      "Risk Management",
-      "Software Project Tracking and Control",
-      "Configuration Management"
-    ],
-    "correct": 1,
-    "why": "Risk Management involves identifying risks and applying mitigation strategies to reduce their impact."
-  },
-  {
-    "question": "During a project review, the team conducts inspections and testing to ensure the software meets customer expectations. This activity is classified under which umbrella activity?",
-    "options": [
-      "Software Quality Assurance",
-      "Risk Management",
-      "Software Project Tracking and Control",
-      "Requirements Validation"
+      "Query Processor",
+      "Transaction Manager",
+      "Storage Manager",
+      "Data Dictionary"
     ],
     "correct": 0,
-    "why": "Software Quality Assurance includes reviews, inspections, and testing to ensure quality standards."
+    "why": "The Query Processor interprets and executes SQL commands to retrieve data. Transaction Manager handles concurrency and recovery. Storage Manager manages physical data storage. Data Dictionary stores metadata but does not process queries."
   },
   {
-    "question": "Match the following scenarios to the correct umbrella activity:\n1) Monitoring project milestones and budget\n2) Identifying and mitigating potential project risks\n3) Conducting software inspections and compliance checks",
+    "question": "Which of the following best describes the difference between naive and sophisticated end-users in a DBMS environment?",
     "options": [
-      "1-Software Quality Assurance, 2-Risk Management, 3-Software Project Tracking and Control",
-      "1-Risk Management, 2-Software Project Tracking and Control, 3-Software Quality Assurance",
-      "1-Software Project Tracking and Control, 2-Risk Management, 3-Software Quality Assurance",
-      "1-Software Project Tracking and Control, 2-Software Quality Assurance, 3-Risk Management"
-    ],
-    "correct": 2,
-    "why": "Monitoring milestones and budget is Software Project Tracking and Control; identifying risks is Risk Management; inspections and compliance are Software Quality Assurance."
-  },
-  {
-    "question": "During a software project, a team holds structured meetings to examine design documents and code for early error detection. Which umbrella activity does this scenario best illustrate?",
-    "options": [
-      "Formal Technical Reviews (FTRs)",
-      "Measurement and Metrics",
-      "Software Configuration Management (SCM)",
-      "Reusability Management"
+      "Naive users are unaware of DBMS; sophisticated users understand database structure and query capabilities",
+      "Naive users design databases; sophisticated users only query data",
+      "Naive users manage security; sophisticated users manage backups",
+      "Naive users write application code; sophisticated users do not"
     ],
     "correct": 0,
-    "why": "Structured meetings to review artifacts for error detection are characteristic of Formal Technical Reviews."
+    "why": "Naive users interact with the system without knowledge of DBMS internals, while sophisticated users understand database schema and can write complex queries. Database design, security, and backup are roles of administrators, not end-users."
   },
   {
-    "question": "If a project team tracks defect density and code complexity to improve product quality, which umbrella activity are they primarily engaged in?",
+    "question": "Which of the following best explains the role of the Data Definition Language (DDL) in a DBMS?",
     "options": [
-      "Work Product Preparation and Production",
-      "Measurement and Metrics",
-      "Software Configuration Management (SCM)",
-      "Formal Technical Reviews (FTRs)"
-    ],
-    "correct": 1,
-    "why": "Collecting and analyzing data like defect density and code complexity aligns with Measurement and Metrics."
-  },
-  {
-    "question": "A development team implements a system to manage changes in requirements and code to prevent conflicts and maintain consistency. Which umbrella activity does this describe?",
-    "options": [
-      "Reusability Management",
-      "Software Configuration Management (SCM)",
-      "Formal Technical Reviews (FTRs)",
-      "Measurement and Metrics"
-    ],
-    "correct": 1,
-    "why": "Managing changes to software artifacts to avoid conflicts is the focus of Software Configuration Management."
-  },
-  {
-    "question": "Consider a scenario where a team decides to incorporate existing software components to reduce development time and cost. Which umbrella activity does this decision represent?",
-    "options": [
-      "Work Product Preparation and Production",
-      "Formal Technical Reviews (FTRs)",
-      "Reusability Management",
-      "Measurement and Metrics"
-    ],
-    "correct": 2,
-    "why": "Using existing components to save effort and cost is the essence of Reusability Management."
-  },
-  {
-    "question": "During which phase of the software framework is the primary focus on understanding and documenting what the system must do?",
-    "options": [
-      "Planning",
-      "Requirement gathering",
-      "Design",
-      "Testing"
-    ],
-    "correct": 1,
-    "why": "Requirement gathering focuses on collecting and understanding the system's needs."
-  },
-  {
-    "question": "If a project team is currently estimating resources and time needed for tasks, which activity are they most likely performing according to the software framework?",
-    "options": [
-      "Scheduling",
-      "Estimating",
-      "Tracking",
-      "Deployment"
-    ],
-    "correct": 1,
-    "why": "Estimating involves predicting resources and time for tasks before scheduling."
-  },
-  {
-    "question": "In a scenario where a software team is monitoring progress against the planned schedule and adjusting activities accordingly, which umbrella activity are they engaged in?",
-    "options": [
-      "Tracking",
-      "Modeling",
-      "Support",
-      "Feedback"
+      "Defines database schema and constraints",
+      "Manipulates data by inserting and updating rows",
+      "Controls user access and permissions",
+      "Manages transaction concurrency"
     ],
     "correct": 0,
-    "why": "Tracking involves monitoring project progress and making necessary adjustments."
+    "why": "DDL is used to define database structures such as tables and constraints. Data manipulation (insert, update) is handled by DML, access control by security modules, and concurrency by transaction management."
   },
   {
-    "question": "During the software construction phase, a team completes coding of a module and prepares it for a formal technical review. Which activity best describes the next immediate step in the software framework?",
+    "question": "A university database has separate views for the Registrar and the Finance department. Which level of the ANSI-SPARC architecture defines these different user views?",
     "options": [
-      "Software configuration management",
-      "Formal technical reviews",
-      "Software quality assurance",
-      "Risk management"
-    ],
-    "correct": 1,
-    "why": "After coding, the next step is to conduct formal technical reviews to ensure code quality before further processes."
-  },
-  {
-    "question": "If a project manager wants to monitor progress and identify potential issues early in a software project, which activity from the software framework should they primarily focus on?",
-    "options": [
-      "Software project tracking and control",
-      "Reusability management",
-      "Document preparation and production",
-      "Measurement"
+      "External level",
+      "Conceptual level",
+      "Internal level",
+      "Physical level"
     ],
     "correct": 0,
-    "why": "Software project tracking and control involves monitoring progress and controlling project activities to identify and resolve issues early."
+    "why": "The external level defines individual user views tailored for different users or departments, such as Registrar and Finance. The conceptual level represents the overall logical structure, while the internal level deals with physical storage details. 'Physical level' is not a standard ANSI-SPARC term."
   },
   {
-    "question": "Match the following activities to their primary focus: 1) Software configuration management, 2) Risk management, 3) Document preparation and production, 4) Measurement.",
+    "question": "Consider the SQL command: DELETE FROM Employees; What is the effect of this command if executed without a WHERE clause?",
     "options": [
-      "1-Tracking changes, 2-Identifying uncertainties, 3-Creating documents, 4-Quantifying metrics",
-      "1-Quality assurance, 2-Project tracking, 3-Code review, 4-Testing",
-      "1-Risk analysis, 2-Documentation, 3-Change control, 4-Project control",
-      "1-Measurement, 2-Configuration, 3-Risk management, 4-Documentation"
+      "All rows in Employees are removed, but the table structure remains",
+      "The Employees table is dropped entirely from the database",
+      "Only NULL values in Employees are deleted",
+      "The table is truncated, resetting any auto-increment counters"
     ],
     "correct": 0,
-    "why": "Each activity aligns as follows: configuration management tracks changes, risk management identifies uncertainties, document preparation creates documents, and measurement quantifies metrics."
+    "why": "DELETE without WHERE removes all rows but keeps the table and its structure intact. DROP removes the entire table, which is different. TRUNCATE is a separate command that removes all rows and resets storage metadata. Deleting only NULL values requires a WHERE clause."
   },
   {
-    "question": "In a software development framework, what does the term 'process flow' primarily describe?",
+    "question": "In the three-level database architecture, which mapping is responsible for translating user queries from their view to the logical structure of the database?",
     "options": [
-      "The sequence and timing of framework activities and their internal tasks",
-      "The tools used for coding and testing",
-      "The final delivery method of the software product",
-      "The budget allocation for each project phase"
+      "External to Conceptual mapping",
+      "Conceptual to Internal mapping",
+      "Internal to External mapping",
+      "Physical to Logical mapping"
     ],
     "correct": 0,
-    "why": "Process flow specifically refers to how activities and tasks are organized in sequence and time within the framework."
+    "why": "External to Conceptual mapping translates user views into the conceptual schema queries. Conceptual to Internal mapping deals with physical storage translation. Internal to External and Physical to Logical are not standard mappings in ANSI-SPARC."
   },
   {
-    "question": "If a software team is analyzing the order and timing of tasks within a framework activity, which aspect of the process are they examining?",
+    "question": "Which of the following best describes the conceptual level in the ANSI-SPARC architecture?",
     "options": [
-      "Process flow",
-      "Quality assurance",
-      "Risk management",
-      "Configuration control"
+      "It defines entities, attributes, relationships, and integrity constraints without storage details",
+      "It stores data physically on disk and manages indexes",
+      "It provides customized user views with derived attributes",
+      "It manages the operating system interface for data access"
     ],
     "correct": 0,
-    "why": "Analyzing the order and timing of tasks relates directly to understanding the process flow."
+    "why": "The conceptual level models the logical structure of the entire database, including entities, relationships, and constraints, independent of physical storage. Physical storage and indexes belong to the internal level, while customized views belong to the external level."
   },
   {
-    "question": "Consider a scenario where a project manager wants to optimize the sequence of tasks within each framework activity to reduce delays. Which concept should they focus on?",
+    "question": "A database administrator modifies the storage structures of a database to improve performance. According to the ANSI-SPARC model, which level(s) should remain unaffected for end users?",
     "options": [
-      "Process flow",
-      "Software architecture",
-      "User interface design",
-      "Version control"
+      "External and Conceptual levels",
+      "Only the Internal level",
+      "Only the External level",
+      "Conceptual and Internal levels"
     ],
     "correct": 0,
-    "why": "Optimizing task sequence and timing is a direct concern of process flow."
+    "why": "Changes in physical storage (Internal level) should not affect users' views (External level) or the logical structure (Conceptual level). The whole point of the three-level architecture is to isolate physical changes from user and logical views."
   },
   {
-    "question": "Which process flow model requires completing each phase fully before moving on to the next, resembling a one-directional sequence?",
+    "question": "Given the SQL snippet: SELECT * FROM Orders LEFT JOIN Customers ON Orders.CustID = Customers.ID WHERE Customers.ID IS NOT NULL; What type of join behavior does this query effectively produce?",
     "options": [
-      "Iterative process flow",
-      "Linear process flow",
-      "Spiral process flow",
-      "Agile process flow"
-    ],
-    "correct": 1,
-    "why": "Linear process flow executes each framework activity in strict sequence, completing one before starting the next."
-  },
-  {
-    "question": "If a development team builds software in small increments, repeating some activities multiple times before moving forward, which process flow are they using?",
-    "options": [
-      "Linear process flow",
-      "Iterative process flow",
-      "Waterfall model",
-      "V-model"
-    ],
-    "correct": 1,
-    "why": "Iterative process flow involves repeated cycles of activities, building the system incrementally."
-  },
-  {
-    "question": "Given a project where communication, planning, and design are completed fully before coding begins, and testing only starts after coding ends, which process flow best describes this approach?",
-    "options": [
-      "Iterative process flow",
-      "Linear process flow",
-      "Incremental process flow",
-      "Spiral process flow"
-    ],
-    "correct": 1,
-    "why": "This step-by-step completion of phases matches the linear process flow pattern."
-  },
-  {
-    "question": "Match the following descriptions to the correct process flow:\n1) Activities are repeated in cycles to refine the product.\n2) Each phase is completed once in a strict order.\nWhich options correspond to 1 and 2 respectively?",
-    "options": [
-      "1: Linear process flow, 2: Iterative process flow",
-      "1: Iterative process flow, 2: Linear process flow",
-      "1: Waterfall model, 2: Spiral model",
-      "1: Agile process flow, 2: Waterfall model"
-    ],
-    "correct": 1,
-    "why": "Iterative process flow involves repeated cycles; linear process flow completes each phase once in order."
-  },
-  {
-    "question": "In which software development approach are activities executed repeatedly in a circular manner to gradually refine the software?",
-    "options": [
-      "Evolutionary Process Flow",
-      "Parallel Process Flow",
-      "Waterfall Process Flow",
-      "Incremental Process Flow"
+      "An INNER JOIN effect, filtering out unmatched rows",
+      "A LEFT JOIN including all Orders even without matching Customers",
+      "A FULL OUTER JOIN including unmatched rows from both tables",
+      "A CROSS JOIN producing Cartesian product"
     ],
     "correct": 0,
-    "why": "Evolutionary Process Flow involves executing activities in a circular manner, refining the software through multiple iterations."
+    "why": "Applying WHERE Customers.ID IS NOT NULL after a LEFT JOIN filters out rows where Customers is NULL, effectively converting the LEFT JOIN into an INNER JOIN. The original LEFT JOIN includes all Orders, but the filter removes unmatched rows."
   },
   {
-    "question": "If a software project requires multiple teams to work on different components simultaneously to speed up delivery, which process flow best describes this approach?",
+    "question": "During conceptual design, a data modeler identifies an attribute 'TotalPrice' calculated as Quantity × UnitPrice. What type of attribute is 'TotalPrice'?",
     "options": [
-      "Evolutionary Process Flow",
-      "Parallel Process Flow",
-      "Spiral Process Flow",
-      "Sequential Process Flow"
-    ],
-    "correct": 1,
-    "why": "Parallel Process Flow allows multiple activities or tasks to be executed concurrently, improving development speed."
-  },
-  {
-    "question": "A mobile app development team releases early versions to users and continuously updates the app based on feedback and changing requirements. Which process flow does this scenario best illustrate?",
-    "options": [
-      "Parallel Process Flow",
-      "Evolutionary Process Flow",
-      "Waterfall Process Flow",
-      "V-Model Process Flow"
-    ],
-    "correct": 1,
-    "why": "Evolutionary Process Flow supports gradual development with continuous refinement based on user feedback."
-  },
-  {
-    "question": "Match the following characteristics to the correct process flow:\n\n1) Activities executed simultaneously to improve efficiency\n2) Software built through repeated cycles with incremental improvements\n\nOptions:\nA) Parallel Process Flow\nB) Evolutionary Process Flow",
-    "options": [
-      "1-A, 2-B",
-      "1-B, 2-A",
-      "1-A, 2-A",
-      "1-B, 2-B"
+      "Derived attribute",
+      "Composite attribute",
+      "Multivalued attribute",
+      "Simple attribute"
     ],
     "correct": 0,
-    "why": "Parallel Process Flow involves simultaneous activities (1-A), while Evolutionary Process Flow involves iterative incremental improvements (2-B)."
+    "why": "'TotalPrice' is derived from other attributes (Quantity and UnitPrice), so it is a derived attribute. Composite attributes can be subdivided, multivalued attributes have multiple values per entity, and simple attributes are atomic."
   },
   {
-    "question": "In which software development approach are activities executed repeatedly in a circular manner, refining the software with each iteration?",
+    "question": "Which of the following is a key advantage of separating the external level from the internal level in a database system?",
     "options": [
-      "Evolutionary Process Flow",
-      "Parallel Process Flow",
-      "Waterfall Process Flow",
-      "Incremental Process Flow"
+      "Users can access data without knowing physical storage details",
+      "Physical storage changes automatically update user views",
+      "Users must adapt queries when storage structures change",
+      "Data redundancy is eliminated by external level"
     ],
     "correct": 0,
-    "why": "The Evolutionary Process Flow involves executing activities in a circular manner, progressively refining the software through multiple versions."
+    "why": "Separating external from internal levels allows users to query data without concern for physical storage details, providing data independence. Physical changes do not automatically update views; rather, mappings handle that. Data redundancy elimination is a design concern, not a direct advantage of this separation."
   },
   {
-    "question": "If a project requires simultaneous modeling of one software aspect while constructing another, which process flow best describes this approach?",
+    "question": "In a database development life cycle, which phase directly follows the requirement analysis and focuses on visualizing entities and their relationships?",
     "options": [
-      "Evolutionary Process Flow",
-      "Parallel Process Flow",
-      "Spiral Process Flow",
-      "Sequential Process Flow"
-    ],
-    "correct": 1,
-    "why": "Parallel Process Flow allows multiple activities to be executed simultaneously, such as modeling and construction happening in parallel."
-  },
-  {
-    "question": "Given a scenario where software requirements frequently change and user feedback is continuously incorporated, which process flow is most suitable?",
-    "options": [
-      "Parallel Process Flow",
-      "Evolutionary Process Flow",
-      "Waterfall Process Flow",
-      "V-Model Process Flow"
-    ],
-    "correct": 1,
-    "why": "Evolutionary Process Flow supports gradual development with continuous refinement based on changing requirements and user feedback."
-  },
-  {
-    "question": "A software team encounters unexpected changes in project requirements halfway through development. According to the concept of process adaptation, what should the team do with their software engineering process?",
-    "options": [
-      "Strictly follow the original process without changes to maintain consistency",
-      "Adapt the process to better fit the new requirements and team dynamics",
-      "Restart the project using a completely different process model",
-      "Ignore the changes and continue with the initial plan"
-    ],
-    "correct": 1,
-    "why": "Process adaptation emphasizes agility and flexibility, allowing teams to modify their process to suit evolving project needs."
-  },
-  {
-    "question": "If a software engineering process is described as 'not a rigid prescription but rather agile and adaptable,' which of the following best classifies this approach?",
-    "options": [
-      "Waterfall model with fixed phases",
-      "A prescriptive, unchangeable process",
-      "An iterative and flexible process tailored to project context",
-      "A process that ignores organizational culture"
-    ],
-    "correct": 2,
-    "why": "The statement highlights an iterative and adaptable process that adjusts to project, team, and organizational needs."
-  },
-  {
-    "question": "Consider a scenario where a software team must align their process with both the organizational culture and the specific problem domain. Which process characteristic is most important in this context?",
-    "options": [
-      "Process rigidity to ensure uniformity",
-      "Process adaptation to accommodate different factors",
-      "Process standardization to reduce variability",
-      "Process isolation from external influences"
-    ],
-    "correct": 1,
-    "why": "Process adaptation allows the software process to be flexible and responsive to organizational and project-specific factors."
-  },
-  {
-    "question": "A software team faces unexpected changes in project requirements and team skill levels. According to the concept of process adaptation, what should the team do?",
-    "options": [
-      "Strictly follow the original software process without changes",
-      "Adapt the software process to better fit the new project conditions",
-      "Delay the project until all team members have the required skills",
-      "Switch to a completely new software process unrelated to the original"
-    ],
-    "correct": 1,
-    "why": "Process adaptation means the software process should be flexible and adjusted to fit the problem, project, team, and organizational culture."
-  },
-  {
-    "question": "If a software process is described as dogmatic and rigid, which of the following issues is most likely to arise?",
-    "options": [
-      "Improved team morale due to clear guidelines",
-      "Inability to respond effectively to changes in project needs",
-      "Faster delivery of software products",
-      "Better alignment with organizational culture"
-    ],
-    "correct": 1,
-    "why": "A rigid, dogmatic process lacks adaptability, making it difficult to respond to changing project or team conditions."
-  },
-  {
-    "question": "Consider a scenario where a software team adapts their process to fit their organizational culture and project needs. Which of the following best classifies this approach?",
-    "options": [
-      "Waterfall model with fixed phases",
-      "Agile and adaptable process approach",
-      "Strict adherence to a standard process model",
-      "Umbrella activity unrelated to process flexibility"
-    ],
-    "correct": 1,
-    "why": "Adapting the process to project and organizational context aligns with an agile and flexible approach rather than rigid models."
-  },
-  {
-    "question": "A software project is divided into small modules, each developed and delivered in increments, allowing partial functionality to be used early. Which SDLC process model best describes this approach?",
-    "options": [
-      "Waterfall Process Model",
-      "Incremental Process Model",
-      "Prototyping Process Model",
-      "Spiral Process Model"
-    ],
-    "correct": 1,
-    "why": "The Incremental Process Model breaks the project into smaller parts delivered incrementally, enabling early partial use."
-  },
-  {
-    "question": "If a development team builds a quick version of the software to gather user feedback before finalizing requirements, which process model are they using?",
-    "options": [
-      "Waterfall Process Model",
-      "Incremental Process Model",
-      "Prototyping Process Model",
-      "V-Model"
-    ],
-    "correct": 2,
-    "why": "Prototyping Process Model involves creating an early prototype to refine requirements based on user feedback."
-  },
-  {
-    "question": "Match the following characteristics to the correct SDLC process model:\n1) Sequential phases with no overlap\n2) Early partial deliveries\n3) User feedback through early versions\nOptions:\nA) Waterfall\nB) Incremental\nC) Prototyping",
-    "options": [
-      "1-A, 2-B, 3-C",
-      "1-B, 2-C, 3-A",
-      "1-C, 2-A, 3-B",
-      "1-A, 2-C, 3-B"
-    ],
-    "correct": 0,
-    "why": "Waterfall is sequential, Incremental delivers early partial functionality, and Prototyping uses early versions for feedback."
-  },
-  {
-    "question": "Which of the following best describes the primary purpose of the Software Development Life Cycle (SDLC)?",
-    "options": [
-      "A random sequence of tasks to create software",
-      "A structured sequence of stages to efficiently develop software",
-      "A set of unrelated activities for software testing only",
-      "A one-time process to deploy software without planning"
-    ],
-    "correct": 1,
-    "why": "SDLC is a well-defined, structured sequence of stages designed to develop software efficiently."
-  },
-  {
-    "question": "If a software project team is following a step-by-step process that includes planning, designing, coding, testing, and deployment, which software engineering framework are they most likely following?",
-    "options": [
-      "Agile Methodology",
-      "Software Development Life Cycle (SDLC)",
-      "DevOps Pipeline",
-      "Continuous Integration/Continuous Deployment (CI/CD)"
-    ],
-    "correct": 1,
-    "why": "The described step-by-step process matches the SDLC framework's structured sequence of stages."
-  },
-  {
-    "question": "Consider a scenario where a software development team skips the design phase and directly starts coding after planning. According to SDLC principles, what is the likely impact of this approach?",
-    "options": [
-      "Improved software quality due to faster coding",
-      "Efficient resource usage by skipping unnecessary steps",
-      "Increased risk of defects and inefficiencies due to lack of design",
-      "Better alignment with SDLC as design is optional"
-    ],
-    "correct": 2,
-    "why": "Skipping the design phase violates SDLC principles and can lead to defects and inefficiencies."
-  },
-  {
-    "question": "In the context of SDLC, which activity directly follows the initial user request and negotiation phase?",
-    "options": [
-      "Requirement Gathering",
-      "System Design",
+      "Conceptual design",
+      "Physical design",
       "Implementation",
       "Testing"
     ],
     "correct": 0,
-    "why": "After the user submits the request and negotiates terms, the development team gathers and identifies requirements in the Requirement Gathering phase."
+    "why": "Conceptual design follows requirement analysis and involves creating an ER model that visualizes entities, attributes, and relationships. Physical design deals with storage details, implementation is coding/loading data, and testing validates the system."
   },
   {
-    "question": "If a software project starts with the user submitting a written request and the development team conducting interviews and studying existing systems, which SDLC steps are being described?",
+    "question": "A table has a column defined as AUTO_INCREMENT. What happens if you explicitly insert a NULL value into this column?",
     "options": [
-      "Communication and Requirement Gathering",
-      "Design and Implementation",
-      "Testing and Deployment",
-      "Maintenance and Support"
+      "The column auto-increments and assigns the next sequence value",
+      "NULL is inserted as the value, overriding auto-increment",
+      "An error is raised due to NULL in an auto-increment column",
+      "The auto-increment counter resets to 1"
     ],
     "correct": 0,
-    "why": "The described activities correspond to the Communication step (user request) followed by Requirement Gathering (interviews, studying existing systems)."
+    "why": "Inserting NULL into an AUTO_INCREMENT column triggers the assignment of the next auto-increment value. NULL is not stored literally, and no error occurs. The counter does not reset unless explicitly altered."
   },
   {
-    "question": "Consider a scenario where the development team uses questionnaires to identify functional requirements after the user contacts them. How would you classify these activities within the SDLC framework?",
+    "question": "Consider the SQL command: DELETE FROM Orders; What is the effect of executing this statement without a WHERE clause?",
     "options": [
-      "Communication followed by Requirement Gathering",
-      "Design followed by Testing",
-      "Implementation followed by Deployment",
-      "Maintenance followed by Support"
+      "Removes all rows from Orders but keeps the table structure intact",
+      "Deletes the Orders table completely from the database",
+      "Removes all rows and resets any AUTO_INCREMENT counters",
+      "Removes only the first row from Orders"
     ],
     "correct": 0,
-    "why": "User contact is part of Communication, and using questionnaires to identify requirements is part of Requirement Gathering."
+    "why": "DELETE without WHERE removes all rows but preserves the table and its structure, including indexes and AUTO_INCREMENT values. DROP deletes the entire table, and TRUNCATE removes all rows and resets AUTO_INCREMENT counters. The option about deleting only the first row is incorrect because no WHERE means all rows are affected."
   },
   {
-    "question": "In the initial phase of the Software Development Life Cycle (SDLC), what is the primary activity performed?",
+    "question": "Which of the following best describes physical data independence in a database system?",
     "options": [
-      "The user submits a written request and negotiates terms with the service provider",
-      "The development team identifies functional requirements",
-      "Developers begin coding the software modules",
-      "Testing the software for bugs and errors"
+      "Ability to change storage details without affecting conceptual schema",
+      "Ability to add new attributes without changing application programs",
+      "Ability to modify user views without changing conceptual schema",
+      "Ability to change conceptual schema without affecting external views"
     ],
     "correct": 0,
-    "why": "The first step in SDLC is communication where the user initiates the request and negotiates terms."
+    "why": "Physical data independence means changes in physical storage (like file organization or indexes) do not affect the conceptual schema or user views. Adding attributes relates to logical data independence. Modifying user views or conceptual schema relates to external or logical independence, not physical."
   },
   {
-    "question": "During the Requirement Gathering phase of SDLC, which of the following methods is NOT typically used to identify requirements?",
+    "question": "Given the schema: Employee(EmpID PK, Name, DeptID FK), which key type is DeptID in Employee?",
     "options": [
-      "Conducting interviews with stakeholders",
-      "Studying existing systems or software",
-      "Writing the final code for the software",
-      "Using questionnaires to collect information"
+      "Foreign key referencing Department",
+      "Primary key uniquely identifying Employee",
+      "Candidate key alternative to EmpID",
+      "Composite key combined with EmpID"
+    ],
+    "correct": 0,
+    "why": "DeptID is a foreign key linking Employee to Department. EmpID is the primary key uniquely identifying employees. DeptID alone is not a candidate key nor part of a composite key here."
+  },
+  {
+    "question": "In the conceptual schema, what is the difference between a weak entity and a regular entity?",
+    "options": [
+      "A weak entity depends on a strong entity for its identification",
+      "A weak entity has a composite key formed only by its own attributes",
+      "A weak entity can exist independently without any relationship",
+      "A weak entity always has a derived attribute as its key"
+    ],
+    "correct": 0,
+    "why": "A weak entity cannot be uniquely identified without a related strong entity; its key includes a foreign key from the strong entity plus its own partial key. It does not have a key formed solely by its own attributes, nor can it exist independently. Derived attributes are not keys by definition."
+  },
+  {
+    "question": "Which SQL statement correctly retrieves all employees along with their department names, including employees with no assigned department?",
+    "options": [
+      "SELECT E.Name, D.DeptName FROM Employee E LEFT JOIN Department D ON E.DeptID = D.DeptID;",
+      "SELECT E.Name, D.DeptName FROM Employee E INNER JOIN Department D ON E.DeptID = D.DeptID;",
+      "SELECT E.Name, D.DeptName FROM Employee E RIGHT JOIN Department D ON E.DeptID = D.DeptID;",
+      "SELECT E.Name, D.DeptName FROM Employee E FULL JOIN Department D ON E.DeptID = D.DeptID WHERE D.DeptName IS NOT NULL;"
+    ],
+    "correct": 0,
+    "why": "LEFT JOIN returns all employees including those without departments (NULL in DeptName). INNER JOIN excludes employees without matching departments. RIGHT JOIN returns all departments, not all employees. FULL JOIN with WHERE D.DeptName IS NOT NULL filters out employees without departments, defeating the purpose."
+  },
+  {
+    "question": "Which DML type best describes SQL SELECT statements?",
+    "options": [
+      "Non-procedural, specifying what data to retrieve",
+      "Procedural, specifying how to retrieve data step-by-step",
+      "Procedural, specifying data modification commands",
+      "Non-procedural, specifying data definition"
+    ],
+    "correct": 0,
+    "why": "SQL SELECT is non-procedural (declarative), specifying what data is needed, not how to obtain it. Procedural DML involves stepwise instructions. Data definition is handled by DDL, not DML."
+  },
+  {
+    "question": "What happens if you execute TRUNCATE TABLE Customers in a database?",
+    "options": [
+      "All rows are deleted and AUTO_INCREMENT counters reset",
+      "Only rows matching a condition are deleted",
+      "Table structure and data remain unchanged",
+      "Table is dropped from the database"
+    ],
+    "correct": 0,
+    "why": "TRUNCATE removes all rows quickly and resets AUTO_INCREMENT counters, but keeps the table structure intact. It does not delete conditionally (that is DELETE with WHERE), nor does it drop the table."
+  },
+  {
+    "question": "Which schema level describes the complete logical structure of the entire database, including entities and relationships?",
+    "options": [
+      "Conceptual schema",
+      "External schema",
+      "Internal schema",
+      "Physical schema"
+    ],
+    "correct": 0,
+    "why": "Conceptual schema defines the overall logical structure of the database including entities, attributes, and relationships. External schema defines user views. Internal schema describes physical storage. Physical schema is not a standard term here."
+  },
+  {
+    "question": "Given the query: SELECT Name FROM Employee WHERE DeptID = 10; What type of DML operation is this?",
+    "options": [
+      "Query operation for data retrieval",
+      "Data insertion operation",
+      "Data update operation",
+      "Data deletion operation"
+    ],
+    "correct": 0,
+    "why": "SELECT with WHERE clause is a query operation retrieving data. INSERT adds data, UPDATE modifies data, DELETE removes data."
+  },
+  {
+    "question": "Which of the following best illustrates external/conceptual mapping in a DBMS?",
+    "options": [
+      "Mapping user view attribute names to conceptual schema attributes",
+      "Changing file storage from HDD to SSD without affecting users",
+      "Adding a new column to a table in the conceptual schema",
+      "Deleting a table from the database"
+    ],
+    "correct": 0,
+    "why": "External/conceptual mapping connects user view attribute names to the conceptual schema, enabling users to see data in their terms. Changing storage is physical data independence. Adding columns affects conceptual schema. Deleting tables is a DDL operation."
+  },
+  {
+    "question": "In a hierarchical database, which statement best describes the parent-child relationship?",
+    "options": [
+      "Each child node can have multiple parent nodes",
+      "Each node can have only one parent node",
+      "Parent nodes can be connected in a circular manner",
+      "Nodes are independent without any parent-child hierarchy"
+    ],
+    "correct": 1,
+    "why": "The hierarchical data model organizes data in a tree-like structure where each node has exactly one parent, ensuring a strict one-to-many relationship. Option A describes the network model, which allows multiple parents. Option C is invalid as hierarchical models do not permit cycles. Option D contradicts the fundamental hierarchical structure."
+  },
+  {
+    "question": "Consider the SQL query: DELETE FROM Employees; What is the effect of running this without a WHERE clause?",
+    "options": [
+      "Removes all rows but keeps the table structure intact",
+      "Deletes the table along with all its data",
+      "Removes all rows and resets any AUTO_INCREMENT counters",
+      "Deletes only rows with NULL values in any column"
+    ],
+    "correct": 0,
+    "why": "DELETE without WHERE removes all rows but preserves the table and its structure. Unlike TRUNCATE, it does not reset AUTO_INCREMENT counters. Option B describes DROP, which removes the entire table. Option D is incorrect because DELETE without WHERE affects all rows regardless of NULL values."
+  },
+  {
+    "question": "In the network data model, what is the main advantage over the hierarchical model?",
+    "options": [
+      "Supports many-to-many relationships with multiple parent nodes",
+      "Restricts each child to a single parent for simplicity",
+      "Uses a flat file structure for faster access",
+      "Eliminates the need for pointers between records"
+    ],
+    "correct": 0,
+    "why": "The network model allows records to have multiple parents, enabling many-to-many relationships, unlike the hierarchical model which restricts each child to one parent. Option B describes hierarchical constraints. Option C is incorrect as network models are graph-based, not flat files. Option D is false because the network model explicitly uses pointers (sets) to represent relationships."
+  },
+  {
+    "question": "Which of the following is a derived attribute in an object-based data model for a social media user entity?",
+    "options": [
+      "User's date of birth",
+      "User's full name",
+      "User's age calculated from date of birth",
+      "User's profile picture"
     ],
     "correct": 2,
-    "why": "Writing code is not part of requirement gathering; it occurs later in the development process."
+    "why": "A derived attribute is one that can be computed from other attributes; here, age is derived from date of birth. Date of birth and profile picture are stored attributes, not derived. Full name is typically stored or composite but not derived in this context."
   },
   {
-    "question": "If a development team is interviewing users and studying existing software to define system and functional requirements, which SDLC phase are they most likely in?",
+    "question": "Given the SQL snippet: SELECT u.id, p.post FROM Users u LEFT JOIN Posts p ON u.id = p.user_id WHERE p.post IS NOT NULL; What is the effect of the WHERE clause on the LEFT JOIN?",
     "options": [
-      "Requirement Gathering",
-      "Communication",
-      "Testing",
-      "Deployment"
+      "Returns all users including those without posts",
+      "Filters out users without posts, effectively making it behave like INNER JOIN",
+      "Returns only posts without matching users",
+      "Causes a syntax error due to NULL check"
+    ],
+    "correct": 1,
+    "why": "Applying WHERE p.post IS NOT NULL after a LEFT JOIN filters out rows where Posts are NULL, so only users with posts appear, mimicking INNER JOIN behavior. Option A is incorrect because users without posts are excluded. Option C is invalid as LEFT JOIN preserves all users. Option D is false; the syntax is valid."
+  },
+  {
+    "question": "Which key type uniquely identifies a record but may be composed of multiple attributes in a relational table?",
+    "options": [
+      "Primary key",
+      "Composite key",
+      "Foreign key",
+      "Alternate key"
+    ],
+    "correct": 1,
+    "why": "A composite key consists of two or more attributes combined to uniquely identify a record. A primary key can be composite but is not necessarily so. Foreign keys reference primary keys in other tables. Alternate keys are candidate keys not chosen as primary."
+  },
+  {
+    "question": "In a relational database, which feature ensures that changes to the physical storage do not affect the logical schema seen by users?",
+    "options": [
+      "Physical data independence",
+      "Logical data independence",
+      "Referential integrity",
+      "Data redundancy"
     ],
     "correct": 0,
-    "why": "Requirement Gathering involves discussing with stakeholders and using methods like interviews and system study to identify requirements."
+    "why": "Physical data independence means the logical schema remains unaffected by changes in physical storage. Logical data independence refers to changes in logical schema without affecting views. Referential integrity enforces consistency between tables. Data redundancy is undesirable duplication."
   },
   {
-    "question": "Match the following activities to their correct SDLC phases:\nA) User submits a written request\nB) Development team identifies functional requirements\nC) Developers write code\nD) Software is tested for errors\nWhich option correctly maps these activities?",
+    "question": "Which of the following best explains why data models are crucial in database design?",
     "options": [
-      "A - Communication, B - Requirement Gathering, C - Implementation, D - Testing",
-      "A - Requirement Gathering, B - Communication, C - Testing, D - Implementation",
-      "A - Testing, B - Implementation, C - Communication, D - Requirement Gathering",
-      "A - Implementation, B - Testing, C - Communication, D - Requirement Gathering"
+      "They define the physical storage format of data",
+      "They provide a communication framework among designers, programmers, and users",
+      "They eliminate the need for database normalization",
+      "They automatically generate SQL queries"
+    ],
+    "correct": 1,
+    "why": "Data models serve as a communication tool that helps designers, programmers, and users understand the database structure and constraints. They do not specify physical storage (Option A), nor do they remove the need for normalization (Option C). They also do not auto-generate SQL (Option D)."
+  },
+  {
+    "question": "In the relational model, what is the main advantage of using declarative query languages like SQL?",
+    "options": [
+      "They specify exactly how data should be retrieved step-by-step",
+      "They allow users to specify what data is needed without detailing how to get it",
+      "They require knowledge of physical data storage",
+      "They limit queries to simple select statements only"
+    ],
+    "correct": 1,
+    "why": "Declarative languages like SQL let users specify what data they want, leaving the DBMS to decide how to retrieve it. Option A describes procedural languages. Option C contradicts data independence principles. Option D is false; SQL supports complex queries beyond simple selects."
+  },
+  {
+    "question": "In a social media database, which structure best models friend connections where each user can have multiple friends and friendships are mutual?",
+    "options": [
+      "Hierarchical model with single parent nodes",
+      "Network model allowing many-to-many relationships",
+      "Flat file model with no relationships",
+      "Relational model with one-to-one relationships"
+    ],
+    "correct": 1,
+    "why": "Friend connections are many-to-many and mutual, best represented by the network model which supports multiple parents and complex relationships. Hierarchical models restrict to one parent, unsuitable here. Flat files lack relationship representation. Relational models can model many-to-many but the question focuses on data model types, making network model the best fit."
+  },
+  {
+    "question": "In a three-tier architecture, which layer is primarily responsible for executing business rules and processing data?",
+    "options": [
+      "The application server layer",
+      "The client user interface layer",
+      "The database server layer",
+      "The network communication layer"
     ],
     "correct": 0,
-    "why": "The sequence correctly matches SDLC phases: Communication (user request), Requirement Gathering (identify requirements), Implementation (coding), Testing (error checking)."
+    "why": "The application server layer handles business logic and data processing, separating concerns from the client UI and database storage. The client layer focuses on presentation, while the database server manages data storage but not business rules. The network layer is not a distinct tier in this model."
   },
   {
-    "question": "During which SDLC phase is a rough software process plan created and feasibility assessed in terms of budget, skills, and technology availability?",
+    "question": "Consider a two-tier client-server system where the client sends a SQL DELETE command without a WHERE clause. What is the likely outcome?",
     "options": [
-      "Feasibility Study",
-      "System Analysis",
-      "Design Phase",
-      "Implementation Phase"
+      "All rows in the target table will be deleted",
+      "The command will fail due to missing WHERE clause",
+      "Only the first row will be deleted",
+      "The server will prompt for confirmation before deleting"
     ],
     "correct": 0,
-    "why": "Feasibility Study involves creating a rough process plan and assessing financial, practical, and technological feasibility."
+    "why": "In SQL, DELETE without a WHERE clause removes all rows from the table. It does not fail or delete only one row. Unlike some GUIs, the server does not prompt for confirmation by default. This is a common trap confusing DELETE with TRUNCATE or DROP."
   },
   {
-    "question": "If a development team is selecting the best software model and planning project scope, schedule, and resources, which SDLC phase are they most likely in?",
+    "question": "Which of the following best describes the main disadvantage of a fat client in a two-tier architecture?",
     "options": [
-      "Feasibility Study",
-      "System Analysis",
-      "Testing",
-      "Deployment"
-    ],
-    "correct": 1,
-    "why": "System Analysis includes creating a project roadmap, selecting software models, and planning scope, schedule, and resources."
-  },
-  {
-    "question": "A project team identifies software limitations and assesses how the project will impact the organization. Which SDLC activity does this describe?",
-    "options": [
-      "Feasibility Study",
-      "System Analysis",
-      "Maintenance",
-      "Requirement Gathering"
-    ],
-    "correct": 1,
-    "why": "System Analysis focuses on identifying limitations and assessing organizational impact."
-  },
-  {
-    "question": "Match the following activities to the correct SDLC phase: (A) Determining if the budget and workforce are sufficient; (B) Selecting the best software development model; (C) Creating a rough software process plan.",
-    "options": [
-      "A and C: Feasibility Study; B: System Analysis",
-      "A and B: System Analysis; C: Feasibility Study",
-      "A: System Analysis; B and C: Feasibility Study",
-      "All activities belong to System Analysis"
+      "High client hardware requirements and complex maintenance",
+      "Increased network traffic due to centralized processing",
+      "Limited user interface customization options",
+      "Difficulty in scaling the database server"
     ],
     "correct": 0,
-    "why": "Feasibility Study covers budget, workforce, and rough process plan; System Analysis involves selecting the software model."
+    "why": "Fat clients perform much of the processing locally, requiring powerful hardware and leading to complex updates on each client. This contrasts with thin clients, which reduce client overhead. Network traffic is typically lower with fat clients. UI customization and database scaling are not primary disadvantages here."
   },
   {
-    "question": "During which phase of the Software Development Life Cycle is pseudo code typically produced to represent the system's logic?",
+    "question": "In a traditional two-tier architecture, where does concurrency control typically occur?",
     "options": [
-      "Requirement Analysis",
-      "Software Design",
-      "Coding",
-      "Testing"
-    ],
-    "correct": 1,
-    "why": "Pseudo code is created during the Software Design phase to represent logical design before actual coding."
-  },
-  {
-    "question": "If a development team is converting gathered requirements into logical diagrams and data-flow diagrams, which SDLC phase are they most likely in?",
-    "options": [
-      "Requirement Gathering",
-      "Software Design",
-      "Coding",
-      "Deployment"
-    ],
-    "correct": 1,
-    "why": "Logical diagrams and data-flow diagrams are outputs of the Software Design phase."
-  },
-  {
-    "question": "A programmer is writing code in a suitable programming language to implement the design and ensure the program runs without errors. Which SDLC phase does this activity correspond to?",
-    "options": [
-      "Coding",
-      "Software Design",
-      "Testing",
-      "Maintenance"
+      "On the database server (tier 2)",
+      "On the client application (tier 1)",
+      "On the network layer",
+      "On the user interface layer"
     ],
     "correct": 0,
-    "why": "Writing code and implementing the design to produce error-free executable programs happens during the Coding phase."
+    "why": "Concurrency control is managed by the database server to ensure data consistency when multiple users access or modify data simultaneously. The client and UI layers do not handle concurrency, and the network layer is responsible for communication, not concurrency."
   },
   {
-    "question": "During which testing level is an individual software component verified independently before integration?",
+    "question": "Given the SQL query: SELECT * FROM Orders LEFT JOIN Customers ON Orders.CustID = Customers.ID WHERE Customers.Name = 'Alice'; What is the effect of the WHERE clause on the join result?",
     "options": [
-      "Module Testing",
-      "Program Testing",
-      "Product Testing",
-      "User-end Testing"
+      "It converts the LEFT JOIN effectively into an INNER JOIN filtering only matching rows",
+      "It preserves all Orders rows regardless of matching Customers",
+      "It returns all Customers including those without Orders",
+      "It returns only Orders with NULL Customer names"
     ],
     "correct": 0,
-    "why": "Module Testing focuses on verifying individual components before they are integrated."
+    "why": "Applying a WHERE filter on the right table after a LEFT JOIN removes rows where the right side is NULL, effectively turning the LEFT JOIN into an INNER JOIN. This is a common confusion between join types and filter placement."
   },
   {
-    "question": "If a software team is verifying that the entire program functions correctly as a whole, which testing level are they performing?",
+    "question": "Which key type uniquely identifies a row but may consist of multiple columns in a relational table?",
     "options": [
-      "Module Testing",
-      "Program Testing",
-      "In-house Testing",
-      "Product Testing"
-    ],
-    "correct": 1,
-    "why": "Program Testing checks the complete program to ensure all parts work together correctly."
-  },
-  {
-    "question": "A company wants to confirm that their software meets all specified requirements before release. Which testing level best fits this goal?",
-    "options": [
-      "User-end Testing",
-      "Product Testing",
-      "Module Testing",
-      "Integration Testing"
-    ],
-    "correct": 1,
-    "why": "Product Testing ensures the software meets all requirements as specified."
-  },
-  {
-    "question": "Consider a scenario where software is being connected to external databases and libraries to ensure smooth operation across systems. Which SDLC phase does this describe?",
-    "options": [
-      "Testing",
-      "Integration",
-      "Module Testing",
-      "User-end Testing"
-    ],
-    "correct": 1,
-    "why": "Integration phase involves connecting software with external components to ensure compatibility."
-  },
-  {
-    "question": "During which SDLC phase is software installed on user systems and configured for portability?",
-    "options": [
-      "Implementation",
-      "Operations & Maintenance",
-      "Disposition",
-      "Requirements Analysis"
+      "Composite primary key",
+      "Foreign key",
+      "Alternate key",
+      "Candidate key with single attribute"
     ],
     "correct": 0,
-    "why": "Implementation phase involves installing software and performing post-installation configurations including portability checks."
+    "why": "A composite primary key uses multiple attributes together to uniquely identify a row. Foreign keys reference keys in other tables, alternate keys are candidate keys not chosen as primary, and candidate keys can be single or composite but the question emphasizes multiple columns."
   },
   {
-    "question": "If a software system requires fixing hidden bugs discovered after deployment and providing user training, which SDLC phase is currently active?",
+    "question": "In a 1-tier database architecture, what is a typical limitation compared to multi-tier architectures?",
     "options": [
-      "Implementation",
-      "Operations & Maintenance",
-      "Disposition",
-      "Design"
+      "Poor scalability and limited multi-user support",
+      "High network latency between client and server",
+      "Complex client-server communication protocols",
+      "Increased hardware costs for clients"
+    ],
+    "correct": 0,
+    "why": "1-tier architecture runs client and database on the same machine, limiting scalability and multi-user access. Network latency and communication complexity are minimal since no client-server separation exists. Hardware costs for clients are generally lower."
+  },
+  {
+    "question": "Which of the following is a key advantage of three-tier architecture over two-tier architecture?",
+    "options": [
+      "Centralized business logic enabling easier maintenance",
+      "Reduced number of servers required",
+      "Simpler client applications with embedded business logic",
+      "Direct client access to database server"
+    ],
+    "correct": 0,
+    "why": "Three-tier architecture centralizes business logic on an application server, simplifying maintenance and updates. It typically requires more servers, not fewer. Clients are thinner and do not embed business logic, and direct database access is avoided to improve security and scalability."
+  },
+  {
+    "question": "In a multi-user DBMS with two-tier architecture, which component is responsible for recovery control after a system failure?",
+    "options": [
+      "Database server (tier 2)",
+      "Client application (tier 1)",
+      "Network interface",
+      "User interface layer"
+    ],
+    "correct": 0,
+    "why": "Recovery control, ensuring data integrity after failures, is handled by the database server. Clients and UI layers do not manage recovery, and the network interface only handles communication."
+  },
+  {
+    "question": "A company wants to reduce client hardware costs and simplify application updates. Which architecture is best suited for this goal?",
+    "options": [
+      "Three-tier architecture with thin clients",
+      "Traditional two-tier with fat clients",
+      "One-tier architecture with local database",
+      "Two-tier with client-side business logic"
+    ],
+    "correct": 0,
+    "why": "Three-tier architecture uses thin clients, reducing hardware requirements and centralizing application logic, easing updates. Two-tier with fat clients or client-side logic increases client complexity. One-tier runs everything locally, not reducing client costs effectively."
+  },
+  {
+    "question": "In an ER diagram, if each employee manages exactly one department and each department is managed by exactly one employee, what type of relationship is this?",
+    "options": [
+      "One-to-One",
+      "One-to-Many",
+      "Many-to-One",
+      "Many-to-Many"
+    ],
+    "correct": 0,
+    "why": "This describes a one-to-one relationship because each entity in both sets participates in exactly one instance of the relationship. One-to-many or many-to-one would imply multiple associations on one side, and many-to-many would allow multiple associations on both sides."
+  },
+  {
+    "question": "Consider the SQL query: SELECT propertyID FROM Properties WHERE ownerID IS NULL; What does this query return in terms of relationship participation?",
+    "options": [
+      "Properties without any owner (partial participation)",
+      "Properties with exactly one owner (total participation)",
+      "Owners without properties (partial participation)",
+      "All properties regardless of ownership"
+    ],
+    "correct": 0,
+    "why": "The query filters properties that have no owner, indicating partial participation of the property entity in the ownership relationship. Total participation would mean every property must have an owner, so this query identifies exceptions."
+  },
+  {
+    "question": "In an ER model, which attribute type best describes 'age' when it is calculated from a 'birthdate' attribute?",
+    "options": [
+      "Derived attribute",
+      "Composite attribute",
+      "Multivalued attribute",
+      "Simple attribute"
+    ],
+    "correct": 0,
+    "why": "'Age' is derived because it can be computed from 'birthdate'. A composite attribute is composed of sub-parts (like address), multivalued attributes hold multiple values, and simple attributes are atomic and stored directly."
+  },
+  {
+    "question": "Given the relationship Oversees between Staff and Projects where one staff member can oversee multiple projects but each project is overseen by only one staff member, what is the cardinality from Staff to Projects?",
+    "options": [
+      "One-to-Many",
+      "Many-to-One",
+      "One-to-One",
+      "Many-to-Many"
+    ],
+    "correct": 0,
+    "why": "Since one staff member can oversee multiple projects, but each project has only one staff member overseeing it, the relationship is one-to-many from Staff to Projects. Many-to-one would be the reverse direction."
+  },
+  {
+    "question": "Which of the following best describes a weak entity in an ER diagram?",
+    "options": [
+      "An entity that depends on another for its identification",
+      "An entity with a composite key",
+      "An entity with multivalued attributes",
+      "An entity with a derived attribute"
+    ],
+    "correct": 0,
+    "why": "A weak entity cannot be uniquely identified by its own attributes alone and requires a related strong entity's key. Composite keys or multivalued attributes do not define weakness, and derived attributes are calculated, not related to entity weakness."
+  },
+  {
+    "question": "What is the effect of executing DELETE FROM Employees without a WHERE clause?",
+    "options": [
+      "All rows in Employees are removed, but the table structure remains",
+      "The Employees table is dropped entirely",
+      "All rows are removed and the auto-increment counter resets",
+      "Only rows with NULL values are deleted"
+    ],
+    "correct": 0,
+    "why": "DELETE without WHERE removes all rows but keeps the table and its structure intact. DROP removes the entire table, and TRUNCATE resets auto-increment counters, unlike DELETE."
+  },
+  {
+    "question": "In a many-to-many relationship between Authors and Books, how is this typically represented in a relational schema?",
+    "options": [
+      "Using a junction table with foreign keys referencing both Authors and Books",
+      "By adding a foreign key in Authors referencing Books",
+      "By adding a foreign key in Books referencing Authors",
+      "By merging Authors and Books into a single table"
+    ],
+    "correct": 0,
+    "why": "Many-to-many relationships require a junction (associative) table to link the two entities via foreign keys. Adding a foreign key to one side only models one-to-many, and merging tables is not a normalized approach."
+  },
+  {
+    "question": "Given the SQL snippet: SELECT s.staffID, p.projectID FROM Staff s LEFT JOIN Projects p ON s.staffID = p.leadID WHERE p.projectID IS NULL; What does this query return?",
+    "options": [
+      "Staff members who are not leading any project",
+      "Projects without a lead staff member",
+      "All staff and their projects",
+      "Projects with multiple leads"
+    ],
+    "correct": 0,
+    "why": "A LEFT JOIN with a NULL filter on the right side returns rows from Staff without matching Projects, i.e., staff who do not lead any project. Projects without leads would require a RIGHT JOIN or different logic."
+  },
+  {
+    "question": "Which attribute type best fits a phone number field that can store multiple contact numbers for a single customer in an ER model?",
+    "options": [
+      "Multivalued attribute",
+      "Derived attribute",
+      "Composite attribute",
+      "Simple attribute"
+    ],
+    "correct": 0,
+    "why": "A multivalued attribute can hold multiple values for a single entity instance, such as multiple phone numbers. Composite attributes combine sub-parts, derived attributes are computed, and simple attributes hold single atomic values."
+  },
+  {
+    "question": "In an ER diagram, if every order must be associated with exactly one customer, but a customer can place zero or more orders, what is the participation and cardinality of the Order entity in the relationship?",
+    "options": [
+      "Total participation with many-to-one cardinality",
+      "Partial participation with one-to-many cardinality",
+      "Total participation with one-to-one cardinality",
+      "Partial participation with many-to-many cardinality"
+    ],
+    "correct": 0,
+    "why": "Orders must have a customer (total participation), and since many orders can belong to one customer, the cardinality from Order to Customer is many-to-one. Partial participation would mean some orders can exist without customers, which is not the case."
+  },
+  {
+    "question": "Given a table EMPLOYEE(EmpID, Email, Phone), which of the following is a candidate key?",
+    "options": [
+      "EmpID",
+      "Email and Phone together",
+      "Phone alone",
+      "EmpID and Email together"
+    ],
+    "correct": 0,
+    "why": "A candidate key is a minimal set of attributes that uniquely identifies a tuple. EmpID alone can uniquely identify an employee, making it a candidate key. Email and Phone together is a super key but not minimal if EmpID alone suffices. Phone alone may not be unique, and combining EmpID and Email is redundant since EmpID alone is sufficient."
+  },
+  {
+    "question": "Consider the relation ORDERS(OrderID, CustomerID, OrderDate) where OrderID is the primary key. Which statement is true about CustomerID?",
+    "options": [
+      "CustomerID is a foreign key referencing CUSTOMERS",
+      "CustomerID is a candidate key",
+      "CustomerID is a super key",
+      "CustomerID is an alternate key"
+    ],
+    "correct": 0,
+    "why": "CustomerID acts as a foreign key linking ORDERS to CUSTOMERS. It is not a candidate key since it may not uniquely identify orders. It is not a super key as it does not uniquely identify tuples in ORDERS. Alternate keys are candidate keys not chosen as primary keys, which CustomerID is not."
+  },
+  {
+    "question": "Which of the following best describes a super key in a relation?",
+    "options": [
+      "A set of attributes that uniquely identifies tuples, possibly with extra attributes",
+      "A minimal set of attributes that uniquely identifies tuples",
+      "An attribute that cannot contain NULL values",
+      "A foreign key that references another table"
+    ],
+    "correct": 0,
+    "why": "A super key is any set of attributes that uniquely identifies tuples, possibly including unnecessary attributes. A candidate key is a minimal super key but super key itself need not be minimal. The other options describe primary key constraints or foreign keys, not super keys."
+  },
+  {
+    "question": "In the relation STUDENT(StudentID, Email, Phone), if StudentID is primary key, and Email is unique but not primary, what is Email classified as?",
+    "options": [
+      "Alternate key",
+      "Foreign key",
+      "Super key",
+      "Composite key"
+    ],
+    "correct": 0,
+    "why": "Email is a candidate key other than the primary key, so it is an alternate key. It is not a foreign key since it does not reference another table. It is not a super key unless combined with other attributes, and not composite since it is a single attribute."
+  },
+  {
+    "question": "What is the effect of executing DELETE FROM PRODUCTS without a WHERE clause?",
+    "options": [
+      "All rows in PRODUCTS are removed but table structure remains",
+      "Table PRODUCTS is dropped entirely",
+      "Only rows with NULL values are deleted",
+      "Table is truncated and reset identity values"
+    ],
+    "correct": 0,
+    "why": "DELETE without WHERE removes all rows but preserves the table and its structure. DROP removes the entire table. DELETE does not selectively delete NULL rows unless specified. TRUNCATE removes all rows and resets identity counters but is a different command."
+  },
+  {
+    "question": "Given tables A(id, name) and B(aid, value) where B.aid is a foreign key referencing A.id, what happens if you try to insert a row in B with aid = 10 but no row in A has id = 10?",
+    "options": [
+      "Insertion fails due to foreign key constraint violation",
+      "Insertion succeeds and creates a NULL in A.id",
+      "Insertion succeeds but B.aid is set to NULL",
+      "Insertion succeeds and adds a new row in A automatically"
+    ],
+    "correct": 0,
+    "why": "Foreign key constraints enforce referential integrity, so inserting a value in B.aid that does not exist in A.id violates the constraint and fails. It does not auto-create rows or convert values to NULL."
+  },
+  {
+    "question": "Which of the following SQL queries correctly selects only the names of customers from CUSTOMER table who have placed orders, assuming ORDER has CustomerID as foreign key?",
+    "options": [
+      "SELECT DISTINCT c.Name FROM CUSTOMER c INNER JOIN ORDER o ON c.CustomerID = o.CustomerID",
+      "SELECT c.Name FROM CUSTOMER c LEFT JOIN ORDER o ON c.CustomerID = o.CustomerID WHERE o.OrderID IS NULL",
+      "SELECT c.Name FROM CUSTOMER c RIGHT JOIN ORDER o ON c.CustomerID = o.CustomerID",
+      "SELECT c.Name FROM CUSTOMER c FULL OUTER JOIN ORDER o ON c.CustomerID = o.CustomerID WHERE o.OrderID IS NULL"
+    ],
+    "correct": 0,
+    "why": "INNER JOIN returns only customers with matching orders. LEFT JOIN with WHERE o.OrderID IS NULL returns customers without orders. RIGHT JOIN and FULL OUTER JOIN with that filter do not correctly select customers who placed orders."
+  },
+  {
+    "question": "In a relation PRODUCT(ProductID, Category, Price), which of the following is a valid super key but not a candidate key?",
+    "options": [
+      "ProductID and Category together",
+      "ProductID alone",
+      "Category alone",
+      "Price alone"
+    ],
+    "correct": 0,
+    "why": "ProductID alone is a candidate key (minimal unique identifier). Adding Category to ProductID creates a super key but not minimal, so not a candidate key. Category or Price alone likely do not uniquely identify tuples."
+  },
+  {
+    "question": "Which of the following best describes a primary key attribute in a relational table?",
+    "options": [
+      "Unique, non-null attribute(s) chosen from candidate keys",
+      "Attribute(s) that may contain duplicates but no NULLs",
+      "Foreign key referencing another table's primary key",
+      "An attribute used only for indexing purposes"
+    ],
+    "correct": 0,
+    "why": "Primary key must be unique and cannot contain NULL values, chosen from candidate keys. Attributes with duplicates are not primary keys. Foreign keys reference primary keys but are not primary keys themselves. Indexing is unrelated to primary key definition."
+  },
+  {
+    "question": "Given the sets D1 = {1,2}, D2 = {3,4}, what is the cardinality of the Cartesian product D1 × D2?",
+    "options": [
+      "4",
+      "2",
+      "3",
+      "6"
+    ],
+    "correct": 0,
+    "why": "The Cartesian product cardinality is the product of the cardinalities of the sets: |D1| × |D2| = 2 × 2 = 4. The other options do not match this fundamental property."
+  },
+  {
+    "question": "Given relations Employee(EmpID, DeptID, Salary) and Department(DeptID, DeptName), which relational algebra expression returns all employees along with their department names, including those without a department?",
+    "options": [
+      "Employee ⨝ Department",
+      "Employee ⟕ Department",
+      "Employee ⟖ Department",
+      "Employee × Department"
     ],
     "correct": 1,
-    "why": "Operations & Maintenance phase focuses on fixing bugs, updating software, and providing user training."
+    "why": "A left outer join (⟕) returns all tuples from Employee and matches from Department, including employees without departments (NULLs for DeptName). An inner join (⨝) excludes employees with no matching department. Right outer join (⟖) would preserve Department tuples, not Employee. Cartesian product (×) pairs all tuples without matching."
   },
   {
-    "question": "Which SDLC phase involves planning for system shutdown, archiving data, and deciding on upgrades or termination due to performance decline?",
+    "question": "What is the effect of executing DELETE FROM Orders without a WHERE clause in SQL?",
     "options": [
-      "Implementation",
-      "Operations & Maintenance",
-      "Disposition",
-      "Testing"
+      "Removes all rows but keeps the table structure intact",
+      "Deletes the table Orders completely",
+      "Removes all rows and resets identity counters",
+      "Deletes only rows with NULL values"
+    ],
+    "correct": 0,
+    "why": "DELETE without WHERE removes all rows but preserves the table and its structure. DROP deletes the entire table. TRUNCATE removes all rows and resets identity counters. DELETE does not selectively remove NULL rows unless specified."
+  },
+  {
+    "question": "In a relation Student(ID, Name, Age, GPA), which attribute is best suited as a candidate key?",
+    "options": [
+      "Name",
+      "ID",
+      "Age",
+      "GPA"
+    ],
+    "correct": 1,
+    "why": "ID uniquely identifies each student, making it a candidate key. Name, Age, and GPA can have duplicates across students and thus cannot uniquely identify tuples."
+  },
+  {
+    "question": "Consider the SQL query:\nSELECT Name FROM Customers WHERE City = 'Boston';\nWhat is the relational algebra equivalent?",
+    "options": [
+      "π_Name(σ_City='Boston'(Customers))",
+      "σ_Name='Boston'(π_City(Customers))",
+      "σ_City='Boston'(π_Name(Customers))",
+      "π_City(σ_Name='Boston'(Customers))"
+    ],
+    "correct": 0,
+    "why": "Selection (σ) filters rows where City='Boston', then projection (π) extracts the Name attribute. The other options confuse order or attributes filtered and projected."
+  },
+  {
+    "question": "Which of the following best describes a multivalued attribute in an ER model?",
+    "options": [
+      "An attribute derived from other attributes",
+      "An attribute that can have multiple values for a single entity",
+      "An attribute composed of multiple sub-attributes",
+      "An attribute that uniquely identifies an entity"
+    ],
+    "correct": 1,
+    "why": "A multivalued attribute can hold multiple values for one entity instance (e.g., phone numbers). Derived attributes are calculated, composite attributes have sub-parts, and unique identifiers are keys."
+  },
+  {
+    "question": "If a relation R(A, B) has tuples {(1, 2), (1, 3), (2, 2)}, what is the result of π_A(R)?",
+    "options": [
+      "{(1, 2), (1, 3), (2, 2)}",
+      "{1, 2}",
+      "{(1), (2)}",
+      "{(2)}"
     ],
     "correct": 2,
-    "why": "Disposition phase handles system termination, data archiving, upgrades, and shutdown planning as software performance declines."
+    "why": "Projection π_A extracts attribute A values and eliminates duplicates, resulting in {(1), (2)}. Option 1 is the original relation, option 3 correctly shows the set of unique A values as single-attribute tuples, while option 2 incorrectly lists values without tuple notation."
   },
   {
-    "question": "Match the following activities to their correct SDLC phases:\n1) Post-installation configuration\n2) Providing user documentation\n3) Data archiving\n4) Fixing real-world issues\nOptions:\nA) Implementation\nB) Operations & Maintenance\nC) Disposition",
+    "question": "Which SQL command is fastest to remove all records from a large table and reset any AUTO_INCREMENT counter?",
     "options": [
-      "1-A, 2-B, 3-C, 4-B",
-      "1-B, 2-A, 3-C, 4-B",
-      "1-C, 2-B, 3-A, 4-C",
-      "1-A, 2-C, 3-B, 4-A"
-    ],
-    "correct": 0,
-    "why": "Post-installation configuration is in Implementation; user documentation and fixing issues are in Operations & Maintenance; data archiving is part of Disposition."
-  },
-  {
-    "question": "A software team is developing a safety-critical medical device application requiring strict regulatory controls and thorough documentation. Which factor primarily influences the choice of the software process model in this scenario?",
-    "options": [
-      "The nature of the project and application",
-      "The programming language used",
-      "The number of developers on the team",
-      "The marketing strategy for the product"
-    ],
-    "correct": 0,
-    "why": "The nature of the project and application, especially safety-critical requirements, dictates the need for strict controls and documentation influencing the process model choice."
-  },
-  {
-    "question": "If a software project requires frequent changes and rapid delivery with minimal upfront planning, which aspect should be prioritized when selecting a process model?",
-    "options": [
-      "Controls and deliverables required",
-      "Methods and tools to be used",
-      "Nature of the project and application",
-      "Team members’ years of experience"
-    ],
-    "correct": 1,
-    "why": "Methods and tools supporting flexibility and rapid iteration are key when frequent changes and quick delivery are required."
-  },
-  {
-    "question": "Match the scenario to the most relevant factor influencing the software process model selection:\n\nScenario: A project with fixed deadlines and predefined deliverables.\nOptions:\nA) Nature of the project\nB) Methods and tools\nC) Controls and deliverables\nD) Team size",
-    "options": [
-      "A - Nature of the project",
-      "B - Methods and tools",
-      "C - Controls and deliverables",
-      "D - Team size"
+      "DELETE FROM table_name;",
+      "DROP TABLE table_name;",
+      "TRUNCATE TABLE table_name;",
+      "DELETE FROM table_name WHERE 1=1;"
     ],
     "correct": 2,
-    "why": "Fixed deadlines and predefined deliverables relate directly to the controls and deliverables factor influencing process model choice."
+    "why": "TRUNCATE TABLE quickly removes all rows and resets AUTO_INCREMENT counters without logging individual row deletions. DELETE commands remove rows row-by-row and do not reset counters. DROP removes the entire table structure."
   },
   {
-    "question": "In which software development model are phases completed sequentially with no overlap, often used for projects with well-defined requirements?",
+    "question": "What is the difference between a composite key and a candidate key?",
     "options": [
-      "Waterfall Model",
-      "Agile Model",
-      "Spiral Model",
-      "Incremental Model"
+      "Composite key is a key made of multiple attributes; candidate key is any minimal unique key",
+      "Composite key is always primary key; candidate key is never primary",
+      "Composite key uniquely identifies tuples; candidate key can have duplicates",
+      "Composite key is derived; candidate key is multivalued"
     ],
     "correct": 0,
-    "why": "The Waterfall Model is a linear sequential approach where each phase is completed before the next begins, suitable for projects with clear requirements."
+    "why": "A composite key consists of multiple attributes combined to uniquely identify tuples. Candidate keys are minimal unique keys, which can be single or composite attributes. Candidate keys can become primary keys."
   },
   {
-    "question": "If a project requires strict phase completion without revisiting previous stages, which software engineering paradigm best fits this scenario?",
+    "question": "Given relations A(X, Y) and B(Y, Z), what is the result of the relational algebra expression π_X,Y (A ⨝ B)?",
     "options": [
-      "Waterfall Model",
-      "Iterative Model",
-      "Prototyping Model",
-      "Agile Model"
+      "All X, Y pairs from A with matching Y in B",
+      "All X, Y, Z tuples from A joined with B",
+      "All Y, Z pairs from B with matching Y in A",
+      "Cartesian product of A and B projected on X, Y"
     ],
     "correct": 0,
-    "why": "The Waterfall Model enforces strict sequential phase completion, disallowing backward movement to earlier stages."
+    "why": "The natural join (⨝) matches tuples on Y; projecting on X, Y returns all X, Y pairs from A that have matching Y in B. Option 1 correctly describes this. Option 2 includes Z which is excluded by projection. Option 3 reverses roles; option 4 is unrelated."
   },
   {
-    "question": "Given a project with stable requirements and a need for clear documentation at each stage, which model is most appropriate?",
+    "question": "Which of the following SQL queries will list all employees who do not belong to department 5, assuming Employee(EmpID, DeptID)?",
     "options": [
-      "Waterfall Model",
-      "Spiral Model",
-      "Agile Model",
-      "RAD Model"
-    ],
-    "correct": 0,
-    "why": "The Waterfall Model is ideal for projects with stable requirements and emphasizes thorough documentation at each sequential phase."
-  },
-  {
-    "question": "In which scenario is the Waterfall Model most appropriate for software development?",
-    "options": [
-      "When requirements are vague and likely to change frequently",
-      "When the customer cannot clearly communicate their needs",
-      "When requirements are well understood and clearly defined",
-      "When rapid prototyping and iterative feedback are required"
-    ],
-    "correct": 2,
-    "why": "The Waterfall Model is best suited when requirements are well understood and clearly defined, allowing sequential progression without frequent changes."
-  },
-  {
-    "question": "A project team is working on enhancing an existing system with well-defined changes. Which software process model aligns best with this scenario?",
-    "options": [
-      "Waterfall Model",
-      "Agile Model",
-      "Spiral Model",
-      "Incremental Model"
-    ],
-    "correct": 0,
-    "why": "The Waterfall Model fits well when making well-defined adaptations to an existing system, as it follows a structured, sequential approach."
-  },
-  {
-    "question": "If a project experiences frequent requirement changes and the customer struggles to specify all needs upfront, what is a likely consequence of using the Waterfall Model?",
-    "options": [
-      "The project will proceed smoothly without confusion",
-      "The sequential flow will handle changes efficiently",
-      "Changes will cause confusion and disrupt progress",
-      "The customer will easily adapt to the process"
-    ],
-    "correct": 2,
-    "why": "Because the Waterfall Model assumes stable requirements, frequent changes can cause confusion and disrupt the project's sequential flow."
-  },
-  {
-    "question": "In the Waterfall Model, why might project team members experience significant idle time during development?",
-    "options": [
-      "Because tasks are performed in parallel without dependencies",
-      "Due to the linear progression causing blocking states where some tasks must wait for others to complete",
-      "Because the customer demands immediate delivery of working software",
-      "Because testing is performed continuously throughout the project"
-    ],
-    "correct": 1,
-    "why": "The Waterfall Model's linear nature creates blocking states where some team members must wait for dependent tasks to finish, causing idle time."
-  },
-  {
-    "question": "If a major design flaw is detected only after the working program is reviewed late in the project, which risk is most associated with the Waterfall Model?",
-    "options": [
-      "Early detection and quick fixes",
-      "Incremental delivery reduces risk",
-      "Late discovery of major blunders can be disastrous",
-      "Continuous integration prevents major flaws"
-    ],
-    "correct": 2,
-    "why": "Because the Waterfall Model delivers working software late, major issues found late can cause serious problems."
-  },
-  {
-    "question": "Consider a project where the customer must wait a long time before seeing any working version of the software. Which software development model does this scenario best describe?",
-    "options": [
-      "Agile Model",
-      "Waterfall Model",
-      "Spiral Model",
-      "Incremental Model"
-    ],
-    "correct": 1,
-    "why": "The Waterfall Model typically delivers a working version only late in the project, requiring customer patience."
-  },
-  {
-    "question": "Match the following characteristics to the Waterfall Model:\n1) Linear phases\n2) Blocking states causing wait times\n3) Late delivery of working software\n4) Continuous customer feedback throughout\nWhich of these are true for the Waterfall Model?",
-    "options": [
-      "1, 2, and 3 only",
-      "2 and 4 only",
-      "1 and 4 only",
+      "SELECT * FROM Employee WHERE DeptID != 5;",
+      "SELECT * FROM Employee WHERE DeptID <> 5;",
+      "SELECT * FROM Employee WHERE NOT DeptID = 5;",
       "All of the above"
     ],
-    "correct": 0,
-    "why": "Waterfall is linear with blocking states and late delivery; continuous customer feedback is not typical."
-  },
-  {
-    "question": "In a software project where each development phase is immediately followed by a corresponding testing phase to ensure early defect detection, which SDLC model is being applied?",
-    "options": [
-      "Waterfall Model",
-      "V-Model",
-      "Iterative Model",
-      "Spiral Model"
-    ],
-    "correct": 1,
-    "why": "The V-Model extends the Waterfall by pairing each development phase with a testing phase, enabling early defect detection."
-  },
-  {
-    "question": "If a project team experiences delays because members must wait for others to finish dependent tasks before proceeding, which model's characteristic does this scenario best illustrate?",
-    "options": [
-      "V-Model's strict verification-before-validation",
-      "Waterfall Model's linear and blocking states",
-      "Agile Model's iterative cycles",
-      "Spiral Model's risk-driven approach"
-    ],
-    "correct": 1,
-    "why": "The Waterfall Model's linear nature causes blocking states where team members wait for dependent tasks to complete."
-  },
-  {
-    "question": "A small software project with evolving requirements and limited budget is being planned. Which drawback of the V-Model might make it less suitable in this scenario?",
-    "options": [
-      "It requires well-defined requirements from the start",
-      "It allows too much flexibility in phases",
-      "It delays testing until the end",
-      "It does not support early defect detection"
-    ],
-    "correct": 0,
-    "why": "The V-Model requires well-defined requirements upfront, making it unsuitable for projects with evolving needs."
-  },
-  {
-    "question": "In the V-Model, which activity corresponds directly to the 'System Design' phase?",
-    "options": [
-      "System Testing",
-      "Unit Testing",
-      "Integration Testing",
-      "Acceptance Testing"
-    ],
-    "correct": 0,
-    "why": "In the V-Model, each development phase has a corresponding testing phase on the opposite side of the 'V'. System Design corresponds to System Testing."
-  },
-  {
-    "question": "A project has well-defined requirements and demands early defect detection. Which SDLC model is most suitable based on these criteria?",
-    "options": [
-      "Waterfall Model",
-      "V-Model",
-      "Agile Model",
-      "Spiral Model"
-    ],
-    "correct": 1,
-    "why": "The V-Model emphasizes early defect detection and requires well-defined requirements, making it suitable for such projects."
-  },
-  {
-    "question": "If a project has frequently changing requirements and needs flexibility, why might the V-Model be a poor choice?",
-    "options": [
-      "Because it lacks testing phases",
-      "Because it is rigid and inflexible",
-      "Because it requires iterative development",
-      "Because it has unclear phases"
-    ],
-    "correct": 1,
-    "why": "The V-Model is rigid and inflexible, making it unsuitable for projects with frequently changing requirements."
-  },
-  {
-    "question": "Match the following characteristics to the V-Model: 1) Sequential process, 2) Emphasizes testing at each stage, 3) Higher cost for small projects, 4) Requires well-defined requirements. Which option correctly classifies these?",
-    "options": [
-      "1 and 2 are pros; 3 and 4 are cons",
-      "1 and 3 are cons; 2 and 4 are pros",
-      "All are pros",
-      "All are cons"
-    ],
-    "correct": 0,
-    "why": "The V-Model is sequential and emphasizes testing (pros), but has higher cost for small projects and requires well-defined requirements (cons)."
-  },
-  {
-    "question": "In the V-Model, what is the primary relationship between development phases and testing phases?",
-    "options": [
-      "Each development phase has a corresponding testing phase directly linked to it",
-      "Testing phases occur only after all development phases are completed",
-      "Testing is performed randomly throughout the development process",
-      "Testing phases precede the development phases"
-    ],
-    "correct": 0,
-    "why": "The V-Model pairs each development phase with a specific testing phase, emphasizing verification before validation."
-  },
-  {
-    "question": "Given a project with unclear requirements that are expected to evolve, which SDLC model from the following would be least suitable?",
-    "options": [
-      "Incremental Model",
-      "V-Model",
-      "Agile Model",
-      "Spiral Model"
-    ],
-    "correct": 1,
-    "why": "The V-Model requires well-defined requirements from the start and is rigid, making it unsuitable for projects with evolving requirements."
-  },
-  {
-    "question": "If a software project needs early defect detection and clear phase definitions but is small in size and budget-sensitive, which challenge of the V-Model might impact it the most?",
-    "options": [
-      "Higher time and cost for small projects",
-      "Lack of early defect detection",
-      "Unclear phase definitions",
-      "Inflexibility to changes in requirements"
-    ],
-    "correct": 0,
-    "why": "While the V-Model supports early defect detection and clear phases, it tends to be costly and time-consuming for small projects."
-  },
-  {
-    "question": "A software project requires clear, sequential phases with well-defined deliverables before moving to the next stage. Which process model best fits this scenario?",
-    "options": [
-      "Waterfall Process Model",
-      "Incremental Process Model",
-      "Prototyping Process Model",
-      "Agile Process Model"
-    ],
-    "correct": 0,
-    "why": "The Waterfall Process Model is characterized by sequential phases with clear deliverables before progressing."
-  },
-  {
-    "question": "If a project demands early delivery of a basic system and gradual addition of features over time, which process model should be selected?",
-    "options": [
-      "Waterfall Process Model",
-      "Incremental Process Model",
-      "Prototyping Process Model",
-      "Spiral Process Model"
-    ],
-    "correct": 1,
-    "why": "The Incremental Process Model supports early delivery of a core system and incremental addition of features."
-  },
-  {
-    "question": "During requirements gathering, a team builds a quick version of the system to clarify user needs before full development. This approach is an example of which process model?",
-    "options": [
-      "Incremental Process Model",
-      "Prototyping Process Model",
-      "Waterfall Process Model",
-      "V-Model"
-    ],
-    "correct": 1,
-    "why": "Prototyping Process Model involves creating a prototype to refine requirements before full-scale development."
-  },
-  {
-    "question": "If a team is focusing on creating software that meets user needs reliably and efficiently, which aspect of software engineering are they primarily addressing?",
-    "options": [
-      "Software quality",
-      "Computer science theory",
-      "Hardware engineering",
-      "Project management"
-    ],
-    "correct": 0,
-    "why": "Software quality involves ensuring the software meets user needs reliably and efficiently."
-  },
-  {
-    "question": "Which statement best distinguishes Software Engineering from Computer Science?",
-    "options": [
-      "Software Engineering focuses on applying engineering principles to software development, while Computer Science studies theoretical foundations.",
-      "Software Engineering only deals with hardware, Computer Science only with software.",
-      "Software Engineering is about writing code, Computer Science is about designing hardware.",
-      "Software Engineering is a subset of Computer Science focused on algorithms."
-    ],
-    "correct": 0,
-    "why": "Software Engineering applies engineering principles to software development, whereas Computer Science is more theoretical."
-  },
-  {
-    "question": "Imagine a scenario where a company decides to implement systematic practices to improve software reliability and maintainability. Which reason from the lecture best justifies this need?",
-    "options": [
-      "To ensure software quality",
-      "To reduce hardware costs",
-      "To increase computer science research",
-      "To avoid engineering altogether"
-    ],
-    "correct": 0,
-    "why": "Implementing systematic practices aims to ensure software quality, a key motivation for software engineering."
-  },
-  {
-    "question": "If a team is focusing on ensuring software meets reliability, usability, and performance standards, which aspect of software engineering are they primarily addressing?",
-    "options": [
-      "Software quality determination",
-      "Computer science theory",
-      "Software development tools",
-      "Project management"
-    ],
-    "correct": 0,
-    "why": "Ensuring reliability, usability, and performance relates directly to determining software quality."
-  },
-  {
-    "question": "Consider a scenario where a company debates whether to adopt software engineering practices over just programming. Which reason best supports the need for software engineering?",
-    "options": [
-      "To apply theoretical computer science concepts",
-      "To systematically produce reliable and maintainable software",
-      "To reduce the cost of hardware",
-      "To increase the speed of coding"
-    ],
-    "correct": 1,
-    "why": "Software engineering emphasizes systematic approaches to create reliable and maintainable software, beyond just coding."
-  },
-  {
-    "question": "Match the following concepts with their correct domain: 1) Algorithms and computation, 2) Software design and testing, 3) Measuring software reliability.",
-    "options": [
-      "1-Software Engineering, 2-Computer Science, 3-Software Engineering",
-      "1-Computer Science, 2-Software Engineering, 3-Software Engineering",
-      "1-Software Engineering, 2-Software Engineering, 3-Computer Science",
-      "1-Computer Science, 2-Computer Science, 3-Software Engineering"
-    ],
-    "correct": 1,
-    "why": "Algorithms relate to computer science; software design/testing and quality measurement fall under software engineering."
-  },
-  {
-    "question": "In the context of Object-Oriented Analysis and Design (OOA/D), which activity primarily focuses on understanding the problem domain and gathering system requirements?",
-    "options": [
-      "Assigning responsibilities to objects",
-      "Requirements and analysis of the problem domain",
-      "Design patterns application",
-      "Architecture analysis and framework design"
-    ],
-    "correct": 1,
-    "why": "Requirements and analysis of the problem domain is the initial phase where the problem is understood and requirements are gathered."
-  },
-  {
-    "question": "If a software team is iteratively refining their design by following a set of common activities based on an Agile Unified Process, which of the following best describes their approach?",
-    "options": [
-      "Waterfall model with strict phase completion",
-      "Unified Process with iterative and incremental development",
-      "Ad-hoc coding without design",
-      "Big Design Up Front (BDUF) approach"
-    ],
-    "correct": 1,
-    "why": "The Unified Process is an iterative and incremental approach aligned with Agile principles."
-  },
-  {
-    "question": "When designing an object-oriented system, what is the primary purpose of assigning responsibilities to objects?",
-    "options": [
-      "To define the programming language syntax",
-      "To distribute functionality logically among objects",
-      "To create UML diagrams",
-      "To select architectural frameworks"
-    ],
-    "correct": 1,
-    "why": "Assigning responsibilities ensures that each object has clear roles and behaviors, promoting modular and maintainable design."
-  },
-  {
-    "question": "Consider a scenario where a developer must decide between focusing on architectural issues versus applying design patterns for better object design. Which statement best differentiates these two activities?",
-    "options": [
-      "Architectural issues deal with low-level code syntax; design patterns focus on database design",
-      "Architectural issues define the overall system structure; design patterns solve recurring design problems within that structure",
-      "Design patterns replace the need for architecture",
-      "Architectural issues are only relevant in procedural programming"
-    ],
-    "correct": 1,
-    "why": "Architecture defines the high-level system organization, while design patterns provide reusable solutions to common design challenges within that architecture."
-  },
-  {
-    "question": "When building a dog-house versus a full-sized house, why is engineering more critical for the house?",
-    "options": [
-      "Because a dog-house requires more financial planning",
-      "Because a house involves specifying detailed requirements, planning, and resource management",
-      "Because a dog-house needs a construction plan",
-      "Because a house can be built ad-hoc without preparation"
-    ],
-    "correct": 1,
-    "why": "Building a house requires detailed requirements, planning, and resource management, unlike a dog-house which can be done ad-hoc."
-  },
-  {
-    "question": "If a project involves specifying what is needed, planning resources, scheduling, and controlling quality, which phase or activity does this best describe?",
-    "options": [
-      "Ad-hoc construction",
-      "Systematic engineering approach",
-      "Random task execution",
-      "Ignoring financial constraints"
-    ],
-    "correct": 1,
-    "why": "These activities are part of a systematic engineering approach to ensure control and quality."
-  },
-  {
-    "question": "Imagine you are tasked with building a software system. You start by defining requirements, estimating costs, scheduling tasks, and planning resources. Which analogy from the source content best matches this approach?",
-    "options": [
-      "Building a dog-house with ad-hoc preparation",
-      "Building a house with detailed planning and specification",
-      "Ignoring planning and starting construction immediately",
-      "Changing plans randomly without documentation"
-    ],
-    "correct": 1,
-    "why": "Defining requirements and planning resources aligns with building a house, which requires systematic preparation."
-  },
-  {
-    "question": "Which scenario best illustrates the need for engineering rather than ad-hoc work?",
-    "options": [
-      "Fixing a simple leak in a faucet without prior planning",
-      "Constructing a multi-room building with budget, time, and quality constraints",
-      "Painting a small fence with available paint",
-      "Assembling a pre-made toy without instructions"
-    ],
-    "correct": 1,
-    "why": "Complex projects with multiple constraints require engineering to manage planning and quality."
-  },
-  {
-    "question": "If a software engineer first breaks down a complex problem into smaller parts and then combines solutions addressing each part, which key software engineering activity are they performing?",
-    "options": [
-      "Analyzing the problem",
-      "Constructing the solution through synthesis",
-      "Understanding the problem",
-      "Testing the solution"
-    ],
-    "correct": 1,
-    "why": "Constructing the solution through synthesis involves combining parts that address different aspects of the problem."
-  },
-  {
-    "question": "Which of the following best describes the initial step in software engineering when approaching a new problem?",
-    "options": [
-      "Using formal methods to produce a result",
-      "Designing high quality software",
-      "Understanding and analyzing the problem",
-      "Constructing the solution from parts"
-    ],
-    "correct": 2,
-    "why": "The first step is to understand and analyze the problem before finding solutions."
-  },
-  {
-    "question": "In a scenario where a team uses formal procedures to systematically produce a software solution, which aspect of software engineering are they primarily applying?",
-    "options": [
-      "Problem understanding",
-      "Problem analysis",
-      "Use of methods or techniques",
-      "High quality software design"
-    ],
-    "correct": 2,
-    "why": "Formal procedures are methods or techniques used to produce a result in software engineering."
-  },
-  {
-    "question": "According to the IEEE-93 definition, which of the following best describes software engineering?",
-    "options": [
-      "A creative art focused solely on coding and debugging software.",
-      "A systematic, disciplined, and quantifiable approach to software development, operation, and maintenance.",
-      "A casual process of trial and error in software design.",
-      "An informal study of programming languages without practical application."
-    ],
-    "correct": 1,
-    "why": "IEEE-93 defines software engineering as a systematic, disciplined, and quantifiable approach to software development, operation, and maintenance."
-  },
-  {
-    "question": "If a team applies a structured method to develop, operate, and maintain software and also studies different approaches to improve these processes, which aspect of software engineering are they practicing?",
-    "options": [
-      "Only the application of engineering principles to software.",
-      "Only the theoretical study of software tools.",
-      "Both the application of systematic approaches and the study of those approaches.",
-      "Ignoring systematic methods and focusing on spontaneous coding."
-    ],
-    "correct": 2,
-    "why": "According to IEEE-93, software engineering includes both applying systematic approaches and studying these approaches."
-  },
-  {
-    "question": "Which of the following scenarios best illustrates the 'quantifiable approach' aspect of software engineering as defined by IEEE?",
-    "options": [
-      "Developing software based on personal intuition without measurement.",
-      "Using metrics and measurements to monitor software quality during development and maintenance.",
-      "Writing code without any documentation or testing.",
-      "Ignoring data and focusing only on creative design."
-    ],
-    "correct": 1,
-    "why": "A quantifiable approach involves using metrics and measurements to manage and improve software processes."
-  },
-  {
-    "question": "Which of the following best describes the primary goal of software engineering?",
-    "options": [
-      "Creating software systems that are reliable, efficient, and affordable to develop and maintain",
-      "Writing code quickly without regard to future maintenance",
-      "Designing software with complex features regardless of cost",
-      "Focusing solely on the aesthetic design of software interfaces"
-    ],
-    "correct": 0,
-    "why": "Software engineering aims to develop software systems that behave reliably and efficiently while being cost-effective to develop and maintain."
-  },
-  {
-    "question": "If a team applies engineering principles to develop a software system ensuring quality and cost-effectiveness, which discipline are they practicing?",
-    "options": [
-      "Software Engineering",
-      "Computer Science",
-      "Information Technology",
-      "Project Management"
-    ],
-    "correct": 0,
-    "why": "Software engineering specifically involves applying engineering principles to develop quality software systems that are cost-effective."
-  },
-  {
-    "question": "A project manager wants to classify an activity where the team focuses on maintaining software that remains reliable and efficient over time. Which activity best fits this description?",
-    "options": [
-      "Software Maintenance within Software Engineering",
-      "Initial Software Design",
-      "Marketing of Software Products",
-      "Hardware Engineering"
-    ],
-    "correct": 0,
-    "why": "Software maintenance is a core part of software engineering focused on keeping software reliable, efficient, and affordable to maintain."
-  },
-  {
-    "question": "Which statement best captures the primary goal of software engineering as a discipline?",
-    "options": [
-      "Developing software that behaves reliably and efficiently while being affordable to maintain",
-      "Focusing solely on the theoretical aspects of computer science",
-      "Creating hardware systems that support software applications",
-      "Writing code quickly without concern for long-term maintenance"
-    ],
-    "correct": 0,
-    "why": "Software engineering aims to develop and maintain software systems that are reliable, efficient, and cost-effective."
-  },
-  {
-    "question": "If a project experiences maintenance costs that are several times higher than initial development costs, which aspect of software engineering does this scenario highlight?",
-    "options": [
-      "The importance of applying engineering principles for cost-effective software development",
-      "The dominance of hardware costs over software costs",
-      "The irrelevance of maintenance in software lifecycle",
-      "The need to focus only on software theories"
-    ],
-    "correct": 0,
-    "why": "Software engineering emphasizes managing maintenance costs as they often exceed development costs, highlighting the need for cost-effective practices."
-  },
-  {
-    "question": "Match the following elements to their categories:\n1) Theories\n2) Customer Problem\n3) Software Engineering Tools\n4) Computer Functions\nWhich of these belong primarily to Computer Science rather than Software Engineering?",
-    "options": [
-      "1 and 4 belong to Computer Science; 2 and 3 belong to Software Engineering",
-      "2 and 3 belong to Computer Science; 1 and 4 belong to Software Engineering",
-      "All belong to Software Engineering",
-      "All belong to Computer Science"
-    ],
-    "correct": 0,
-    "why": "Theories and computer functions are core to computer science, while customer problems and tools/techniques relate to software engineering."
-  },
-  {
-    "question": "A software project manager notices that the software cost is higher than the hardware cost and that maintenance expenses are increasing over time. According to software engineering principles, what should be the primary focus to address this?",
-    "options": [
-      "Applying engineering principles to develop cost-effective and maintainable software systems",
-      "Reducing hardware specifications to cut costs",
-      "Ignoring maintenance costs as they are unavoidable",
-      "Focusing only on initial software development speed"
-    ],
-    "correct": 0,
-    "why": "Software engineering stresses cost-effective development and maintenance to manage software costs that often exceed hardware and initial development costs."
-  },
-  {
-    "question": "In a scenario where a company notices that the expenses on software maintenance exceed the initial development costs by several times, what primary concern of software engineering is highlighted?",
-    "options": [
-      "The dominance of software costs over hardware costs",
-      "The importance of cost-effective software development",
-      "The higher cost of software maintenance compared to development",
-      "The need for faster software development cycles"
-    ],
-    "correct": 2,
-    "why": "Software engineering emphasizes that maintenance costs can be significantly higher than development costs, highlighting the importance of managing these expenses."
-  },
-  {
-    "question": "If a system's total cost is largely influenced by software expenses rather than hardware, which statement best reflects the implication for software engineering?",
-    "options": [
-      "Hardware optimization should be prioritized",
-      "Software engineering must focus on cost-effective development",
-      "Software costs are negligible compared to hardware",
-      "Software development speed is more important than cost"
-    ],
-    "correct": 1,
-    "why": "Since software costs often dominate system costs, software engineering aims to develop software in a cost-effective manner."
-  },
-  {
-    "question": "Consider a long-lived software system where maintenance costs are several times the initial development costs. Which software engineering activity should be prioritized to control overall system expenses?",
-    "options": [
-      "Initial hardware investment",
-      "Cost-effective software maintenance strategies",
-      "Rapid prototyping during development",
-      "User interface design improvements"
-    ],
-    "correct": 1,
-    "why": "Because maintenance costs can exceed development costs, focusing on cost-effective maintenance is crucial for managing total software expenses."
-  },
-  {
-    "question": "A company needs to create a software product quickly while keeping costs low and ensuring it can be adapted for future business changes. Which primary challenge of commercial software development are they addressing?",
-    "options": [
-      "Developing scalable and distributable systems",
-      "Creating reusable basic building blocks",
-      "Reducing development and maintenance costs",
-      "Developing customized products in a short time"
-    ],
     "correct": 3,
-    "why": "The challenge focuses on delivering customized products rapidly, which aligns with developing customized products in a short time."
+    "why": "All three WHERE clauses exclude DeptID=5 employees correctly. != and <> are equivalent inequality operators; NOT DeptID=5 is logically the same. Hence, all queries produce the same result."
   },
   {
-    "question": "If a software team focuses on creating components that can be reused across different business processes and adapted to evolving environments, which commercial software challenge are they primarily tackling?",
+    "question": "Given tables Students(StudentID, Name) and Enrollments(StudentID, CourseName), what will the query\n\nSELECT Name, CourseName FROM Students LEFT JOIN Enrollments ON Students.StudentID = Enrollments.StudentID;\n\nreturn?",
     "options": [
-      "Reducing costs for development and maintenance",
-      "Developing scalable and distributable systems",
-      "Developing basic building blocks for reuse and adaptation",
-      "Developing customized products in a short time"
+      "All students with their courses; students without courses show NULL for CourseName",
+      "Only students who have at least one course",
+      "All courses with matching students; courses without students show NULL for Name",
+      "Only courses that have at least one student"
+    ],
+    "correct": 0,
+    "why": "A LEFT JOIN returns all rows from the left table (Students) and matched rows from the right (Enrollments). If no match exists, NULL appears for right table columns. Option 0 correctly describes this. Option 1 describes INNER JOIN behavior. Option 2 and 3 confuse LEFT JOIN with RIGHT JOIN or INNER JOIN."
+  },
+  {
+    "question": "Consider the query:\n\nSELECT c.Name, SUM(o.Amount) FROM Customers c LEFT JOIN Orders o ON c.CustomerID = o.CustomerID GROUP BY c.Name;\n\nWhat is the effect if a customer has no orders?",
+    "options": [
+      "Customer appears with NULL sum",
+      "Customer does not appear in result",
+      "Customer appears with sum 0",
+      "Query throws error due to NULL in SUM"
     ],
     "correct": 2,
-    "why": "Creating reusable and adaptable building blocks directly addresses the challenge of developing components that can be reused and adapted."
+    "why": "LEFT JOIN includes all customers; for those without orders, SUM aggregates NULLs as 0. Hence, customers with no orders appear with total spending 0. Option 0 is incorrect because SUM returns 0, not NULL. Option 1 is INNER JOIN behavior. Option 3 is false; SUM ignores NULLs."
   },
   {
-    "question": "Match the following scenarios to the commercial software challenge they best represent:\n1) Building a system that can handle increasing user load and be deployed across multiple locations.\n2) Delivering a tailored software solution within a tight deadline.\n3) Designing modules that reduce future maintenance effort.\nOptions:\nA) Develop scalable and distributable systems\nB) Develop customized products in a short time\nC) Reduce costs for development and maintenance",
+    "question": "What is the difference between DELETE FROM Orders; and TRUNCATE TABLE Orders; when no WHERE clause is specified?",
     "options": [
-      "1-A, 2-B, 3-C",
-      "1-B, 2-C, 3-A",
-      "1-C, 2-A, 3-B",
-      "1-A, 2-C, 3-B"
+      "DELETE removes rows one by one and logs each; TRUNCATE deallocates data pages quickly",
+      "Both commands do the same and can be rolled back identically",
+      "TRUNCATE deletes rows conditionally; DELETE removes all rows unconditionally",
+      "DELETE cannot remove all rows without WHERE, TRUNCATE can"
     ],
     "correct": 0,
-    "why": "Scenario 1 matches scalable/distributable systems, 2 matches quick customized product development, and 3 matches cost reduction for maintenance."
+    "why": "DELETE removes rows individually and logs each deletion, which is slower but transactional. TRUNCATE quickly deallocates data pages, is faster, but may have restrictions on rollback. Option 1 is incorrect since TRUNCATE is not fully logged. Option 2 and 3 misunderstand command behaviors."
   },
   {
-    "question": "A government agency cancels a $4 billion tax modernization project after realizing the system requirements were not properly defined and tested. Which failed project from the list does this scenario most closely resemble?",
+    "question": "Tables:\n\nStudents(StudentID PK, Name)\nCourses(CourseID PK, CourseName)\nEnrollments(StudentID FK, CourseID FK)\n\nWhich JOIN type and ON clause will show all courses and the names of students enrolled, including courses with no students?",
     "options": [
-      "2007 Deloitte LAUSD payroll system failure",
-      "1997 U.S. Internal Revenue Service tax modernization effort",
-      "2006 US Department of Homeland Security Emerge2 failure",
-      "2010 EDS CRM project failure"
+      "RIGHT JOIN Students ON Enrollments.StudentID = Students.StudentID",
+      "LEFT JOIN Enrollments ON Courses.CourseID = Enrollments.CourseID",
+      "INNER JOIN Students ON Enrollments.StudentID = Students.StudentID",
+      "LEFT JOIN Students ON Courses.CourseID = Students.StudentID"
     ],
     "correct": 1,
-    "why": "The 1997 IRS project involved a large-scale tax modernization effort that was cancelled, matching the scenario of a government agency cancelling a costly tax system."
+    "why": "To show all courses including those without students, start from Courses LEFT JOIN Enrollments on CourseID. Option 1 correctly uses LEFT JOIN from Courses to Enrollments. Option 0 incorrectly uses RIGHT JOIN and mismatches tables. Option 2 is INNER JOIN, excluding courses without students. Option 3 joins on wrong keys."
   },
   {
-    "question": "If a software project fails primarily due to poor requirements gathering and inadequate testing, which of the following projects is the best example of this cause?",
+    "question": "Given relations R(A,B) and S(B,C), which relational algebra expression returns all tuples from R with matching S, plus those from R without matches (with NULLs for S attributes)?",
     "options": [
-      "2009 National Offender Management Service failure",
-      "2007 Deloitte LAUSD payroll system failure",
-      "2008 J. Crew website and call center upgrade",
-      "1996 Arianespace Ariane 5 rocket software failure"
+      "R ⨝ S",
+      "R ⟕ S",
+      "R ⟖ S",
+      "R ∪ S"
     ],
     "correct": 1,
-    "why": "The Deloitte project failed due to poor requirements gathering and testing, directly matching the cause described."
+    "why": "R ⟕ S denotes left outer join returning all R tuples plus matched S tuples or NULLs if no match. Option 0 is inner join (only matches). Option 2 is right outer join. Option 3 is union, unrelated to join semantics."
   },
   {
-    "question": "Match the following failure causes to the corresponding project: \nA) Leadership vacuum\nB) Software specification and design errors\nC) Unbalanced approach\nD) Severe revenue loss from website upgrade\nWhich mapping is correct?",
+    "question": "What happens if you run:\n\nDELETE FROM Enrollments;\n\nwithout a WHERE clause?",
     "options": [
-      "A-2009 National Offender Management Service, B-1996 Arianespace, C-2006 US Department of Homeland Security, D-2008 J. Crew",
-      "A-2010 EDS, B-2007 Deloitte, C-1997 IRS, D-1998 Snap-on Inc.",
-      "A-2008 J. Crew, B-2009 National Offender Management Service, C-2010 EDS, D-2006 US Department of Homeland Security",
-      "A-1996 Arianespace, B-2006 US Department of Homeland Security, C-2008 J. Crew, D-2007 Deloitte"
+      "All rows in Enrollments are deleted, but table structure remains",
+      "Table Enrollments is dropped from the database",
+      "Only rows matching default condition are deleted",
+      "Table is emptied and auto-increment counters reset"
     ],
     "correct": 0,
-    "why": "Each cause matches the project: leadership vacuum (2009 NOMS), design errors (1996 Arianespace), unbalanced approach (2006 DHS), and revenue loss from website upgrade (2008 J. Crew)."
+    "why": "DELETE without WHERE removes all rows but keeps table and structure intact. Option 1 is correct. Option 2 confuses DELETE with DROP. Option 3 is false; no default condition applies. Option 4 is TRUNCATE behavior, not DELETE."
   },
   {
-    "question": "Consider a scenario where a $50 million order-entry system failure leads to revenue loss in a manufacturing company. Which project from the list is most analogous to this scenario?",
+    "question": "Given:\n\nStudents(StudentID PK AUTO_INCREMENT, Name)\n\nIf you insert a row without specifying StudentID, what happens?",
     "options": [
-      "1998 Snap-on Inc. order-entry system failure",
-      "2010 EDS CRM project failure",
-      "2009 National Offender Management Service failure",
-      "2007 Deloitte LAUSD payroll system failure"
+      "StudentID is automatically assigned the next incremented value",
+      "Insert fails due to missing StudentID",
+      "StudentID is set to NULL",
+      "StudentID is assigned 0"
     ],
     "correct": 0,
-    "why": "The Snap-on Inc. project involved a $50 million failure in the order-entry system causing revenue loss, matching the scenario."
+    "why": "AUTO_INCREMENT columns automatically assign the next sequential value if omitted in INSERT. Option 0 is correct. Option 1 is false because insert does not fail. Option 2 and 3 are invalid for PK with auto increment."
   },
   {
-    "question": "If a software product is judged based on how well it meets the needs and expectations of its users, which perspective on quality is being applied?",
+    "question": "Tables:\n\nCustomers(CustomerID PK, Name, City)\nOrders(OrderID PK, CustomerID FK, Product, Amount)\n\nWhich query shows all customers from 'Karachi' with their orders, including customers with no orders?",
     "options": [
-      "Transcendental view",
-      "User view",
-      "Manufacturing view",
-      "Value-based view"
-    ],
-    "correct": 1,
-    "why": "The user view defines quality as fitness for purpose, focusing on how well the product meets user needs."
-  },
-  {
-    "question": "A software development team ensures that the product strictly adheres to the documented specifications without deviation. Which quality perspective does this approach best represent?",
-    "options": [
-      "Product view",
-      "Value-based view",
-      "Manufacturing view",
-      "Transcendental view"
-    ],
-    "correct": 2,
-    "why": "The manufacturing view defines quality as conformance to specification."
-  },
-  {
-    "question": "Consider a scenario where a customer is willing to pay a premium price for a software product due to its perceived benefits. Which quality perspective is primarily being considered here?",
-    "options": [
-      "Value-based view",
-      "Product view",
-      "User view",
-      "Manufacturing view"
+      "SELECT c.Name, o.Product FROM Customers c LEFT JOIN Orders o ON c.CustomerID = o.CustomerID WHERE c.City = 'Karachi';",
+      "SELECT c.Name, o.Product FROM Customers c INNER JOIN Orders o ON c.CustomerID = o.CustomerID WHERE c.City = 'Karachi';",
+      "SELECT c.Name, o.Product FROM Orders o RIGHT JOIN Customers c ON o.CustomerID = c.CustomerID WHERE c.City = 'Karachi';",
+      "SELECT c.Name, o.Product FROM Customers c RIGHT JOIN Orders o ON c.CustomerID = o.CustomerID WHERE c.City = 'Karachi';"
     ],
     "correct": 0,
-    "why": "The value-based view relates quality to the amount the customer is willing to pay."
+    "why": "LEFT JOIN from Customers filters customers by city first, then joins orders, including customers without orders. Option 0 correctly does this. Option 1 excludes customers without orders (INNER JOIN). Option 2 is RIGHT JOIN but reversed tables, less clear. Option 3 uses RIGHT JOIN incorrectly."
   },
   {
-    "question": "If a software engineer says, 'We know this product is high quality because it has excellent maintainability and reliability,' which quality perspective are they referencing?",
+    "question": "What is the effect of the query:\n\nSELECT DISTINCT Name FROM Students;\n\ncompared to\n\nSELECT Name FROM Students;",
     "options": [
-      "Transcendental view",
-      "Product view",
-      "User view",
-      "Manufacturing view"
-    ],
-    "correct": 1,
-    "why": "The product view relates quality to product characteristics such as maintainability and reliability."
-  },
-  {
-    "question": "If a software product is judged primarily by how well it meets the specific needs of its users, which perspective on quality is being applied?",
-    "options": [
-      "Transcendental view",
-      "User view",
-      "Manufacturing view",
-      "Value-based view"
-    ],
-    "correct": 1,
-    "why": "The user view defines quality as fitness for purpose, focusing on meeting user needs."
-  },
-  {
-    "question": "A software development team ensures that the product strictly adheres to predefined specifications without deviation. Which quality perspective does this approach best represent?",
-    "options": [
-      "Product view",
-      "Value-based view",
-      "Manufacturing view",
-      "Transcendental view"
-    ],
-    "correct": 2,
-    "why": "The manufacturing view defines quality as conformance to specification."
-  },
-  {
-    "question": "Consider a scenario where a customer is willing to pay a premium price for a software product due to its perceived superior quality. Which quality perspective does this scenario illustrate?",
-    "options": [
-      "Value-based view",
-      "Product view",
-      "User view",
-      "Transcendental view"
+      "Removes duplicate names from the result",
+      "Returns all names including duplicates",
+      "Filters names with NULL values",
+      "Orders names alphabetically"
     ],
     "correct": 0,
-    "why": "The value-based view relates quality to the amount the customer is willing to pay."
+    "why": "DISTINCT eliminates duplicate rows, so only unique names appear. Option 0 is correct. Option 1 describes the query without DISTINCT. Option 2 and 3 are unrelated to DISTINCT."
+  },
+  {
+    "question": "Given:\n\nStudents(StudentID, Name)\nCourses(CourseID, CourseName, StudentID)\n\nWhat is the result of:\n\nSELECT s.Name, c.CourseName FROM Students s RIGHT JOIN Courses c ON s.StudentID = c.StudentID WHERE s.Name IS NULL;",
+    "options": [
+      "Shows courses with no matching student",
+      "Shows students without courses",
+      "Shows all students with their courses",
+      "Shows all courses with students"
+    ],
+    "correct": 0,
+    "why": "RIGHT JOIN returns all courses plus matched students; WHERE s.Name IS NULL filters only courses without matching students. Option 0 is correct. Option 1 confuses students without courses with courses without students. Option 2 and 3 are incorrect because of the filter."
   }
 ];
 
